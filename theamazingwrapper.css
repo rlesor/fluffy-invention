@@ -1,0 +1,22 @@
+
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+}
+
+.wrapper {
+    background-color: red;
+    height:     auto;
+    min-height: 100vh;
+    margin:     0px auto;
+    padding:    0px auto
+
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+
+}
