@@ -1,0 +1,40 @@
+html, body {
+  margin: 0px auto;
+  padding: 0px auto; 
+}
+
+.wrapper {
+  background-color: gray; /*used to locate the position of the wrapper*/
+  height: auto; /*defines wrapper height*/ 
+}
+img {
+  height:100px;  
+}
+ /*
+  to do
+  start posisjon
+  at den skal flyte på toppen 
+  fix farger
+  fix border
+  */ 
+#navigation_bar {
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  
+}
+#navigation_bar table {    
+  width:100%;
+  max-width: 800px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen only and (){
+  
+}
+
+#2_om_lyche {
+}
