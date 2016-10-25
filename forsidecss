@@ -1,0 +1,46 @@
+
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    background-color: #D2B48C;
+}
+
+header {
+    height: 30%;
+    min-width: 100vh;
+    margin: 0 auto;
+    padding: 0 auto;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+
+}
+section {
+  min-width: 100vh;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#logo {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 3px auto;
+}
+#pictures {
+  width: 100%;
+  height: auto;
+}
+
+#picture1 {
+  max-width: 100%;
+  opacity: 0.7;
+}
