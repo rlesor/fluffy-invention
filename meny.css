@@ -1,0 +1,19 @@
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    background-color: #D2B48C;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+h2 {
+  font-family: : Georgia;
+}
+
+#meny {
+  max-width: 70ch;
+  margin: auto;
+}
