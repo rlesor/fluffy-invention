@@ -2,38 +2,33 @@
 body, html {
     height:  100%;
     margin:  0px auto;
-    padding: 0px auto;
     background-color: #D2B48C;
 }
 
 header {
-    height: 30%;
-    min-width: 100vh;
-    margin: 0 auto;
-    padding: 0 auto;
-    border-width: 1px;
-    border-style: dotted;
-    border-color: black;
-
+    width: 100%;
+    text-align: center;
+    margin: 2% 0;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
 }
 section {
-  min-width: 100vh;
-  height: 500px;
-  margin: 0 auto;
-  padding: 0 auto;
+
+  height: auto;
+  margin: 20px auto;
   border-width: 1px;
-  border-style: solid;
+  border-bottom-style: dotted;
   border-color: black;
 }
 
 #logo {
   width: 20%;
+    min-width: 150px;
   height: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: 3px auto;
+  margin-top: 20px;
+
 }
 #pictures {
   width: 100%;
@@ -43,4 +38,97 @@ section {
 #picture1 {
   max-width: 100%;
   opacity: 0.7;
+}
+
+#navigation_bar {
+  background-color: rgba(171,130,111,0.5)  ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    background-color:transparent;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .menu_button {
+    display: inline-block;
+    color: #4d3a32;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .menu_button {
+    background-color: #a36a58;
+    font-weight: bold;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.menu_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(150,116,71,0.5);
+    min-width: 150px;
+    z-index: 5;
+}
+
+.menu_content a {
+    color: #4d3a32;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu_content a:hover {
+  background-color: #a37d4b;
+  font-weight: bold;
+}
+
+.dropdown:hover .menu_content {
+    display: block;
+}
+
+#kornbrdinfo, #sidesalatinfo, #blaskjellinfo, #litensuppeinfo, #reinsdyrinfo, #klippfiskinfo, #bygottoinfo,
+#suppeinfo, #lychesalatinfo, #lycheburgerinfo, #blaburgerinfo, #gburgerinfo, #isinfo, #cremainfo, #trippelinfo,
+#barnesuppeinfo, #andeplserinfo, #rainsdyrbarninfo, #klippfiskbarninfo, #barneisinfo   {
+  display: none;
+  background-color: rgba(171,130,111,0.5);
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+    background-color: #D2B48C;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+h2 {
+  font-family: : Georgia;
+}
+
+#meny {
+  max-width: 70ch;
+  margin: auto;
 }
