@@ -23,3 +23,4 @@ function display_content(id) {
 function hide_content(id) {
   document.getElementById(id).style.display = "none";
 }
+
