@@ -32,3 +32,6 @@ function scrollToTop() {
 	}
 	else clearTimeout(timeOut);
 }
+/* function found here: https://gist.github.com/ricardozea/abb9f98a19f6d04a0269
+scrollTo() for å scrolle til de andre sidene
+*/
