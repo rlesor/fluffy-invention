@@ -181,9 +181,11 @@
 
       </section>
 
+	  <a name="name"></a>
+<form action="example.html#name">
 
      <section id ="bordreservasjon">
-      <form id="reservasjon" action="" onsubmit="return validateForm()" method="post">
+      <form id="reservasjon" action="example.html#name" onsubmit="return validateForm()" method="post">
         <h1>Bordreservasjon</h1>
         <p>
           Antall personer:  <input type="number" id="res_antPers"><br>
@@ -225,7 +227,7 @@
          Allergier: <input type="text" id="res_allergier">
 
         <p>
-          <input value="Opprett reservasjon" id="res_send" type="submit" >
+		<button value="Opprett reservasjon" id="res_send" type="submit" name="res_send">Opprett reservasjon</button>
         </p>
       </form>
     </section>
