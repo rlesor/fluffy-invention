@@ -14,3 +14,12 @@ if (pers==null || pers=="" || pers>=12 || tidspunkt = "" || varighet == "Varighe
   return false;
   }
 }
+
+
+function display_content(id) {
+  document.getElementById(id).style.display = "block";
+
+}
+function hide_content(id) {
+  document.getElementById(id).style.display = "none";
+}
