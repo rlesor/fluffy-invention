@@ -23,4 +23,12 @@ function display_content(id) {
 function hide_content(id) {
   document.getElementById(id).style.display = "none";
 }
-
+/*scroll til toppen*/
+var timeOut;
+function scrollToTop() {
+	if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+		window.scrollBy(0,-50);
+		timeOut=setTimeout("scrollToTop()",10);
+	}
+	else clearTimeout(timeOut);
+}
