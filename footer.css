@@ -1,0 +1,15 @@
+footer{
+  width:100%
+  padding:40px, 0px;
+  height:  100%;
+  margin:  0px auto;
+  padding: 0px auto;
+}
+#footer_p{
+  Position:absolute;
+  right:10%;
+}
+#footer_list{
+  position:absolute;
+  list-style-type:none;
+}
