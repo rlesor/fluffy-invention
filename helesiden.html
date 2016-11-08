@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href= "style.css">
+    <link rel="stylesheet" type="text/css" href= "lyche.css">
+    <link rel="stylesheet" type="text/css" href= "forside.css">
+    <link rel="stylesheet" type="text/css" href= "meny.css">
+    <link rel="stylesheet" type="text/css" href= "navbar.css">
+    <link rel="stylesheet" type="text/css" href= "footer.css">
+
   </head>
-  <body>
+  <body id="top">
     <header>
-      <img src="http://i.imgur.com/VoFKyqP.png" alt="Lyche - kjøkken og bar" id="logo" />
+      <img src="../bilder/logo.png" alt="Lyche - kjøkken og bar" id="logo" />
     </header>
 	  
     <div class= "wrapper">
@@ -17,10 +22,10 @@
           <li class="dropdown">
             <a href="#meny" class="menu_button">Meny</a>
             <div class="menu_content">
-              <a href="smaaretter">Småretter</a>
-              <a href="hovedretter">Hovedretter</a>
-              <a href="barnemeny">Barnemeny</a>
-              <a href="dessert">Dessert</a>
+              <a href="#smaaretter">Småretter</a>
+              <a href="#hovedretter">Hovedretter</a>
+              <a href="#barnemeny">Barnemeny</a>
+              <a href="#dessert">Dessert</a>
             </div>
           <li><a href="#reservasjon">Reservasjon</a></li>
           <li><a href="#galleri">Bildegalleri</a></li>
@@ -31,15 +36,16 @@
       </div>
 
 
-    <section id = "forside">
-      <div id= pictures>
-        <img src="https://i.imgsafe.org/a80dc3666b.jpg" alt="Lyche - kjøkken og bar" id="picture1" />
-	      <figcaption>foto: foto.samfundet.no</figcaption>
-      </figure>
+	<section id = "forside">
+      	   <div id= "slideshow_content">
+             <img id="slide1" src="1.jpg" alt="Lyche - kjøkken og bar">
+             <img id="slide2" src="2.jpg" alt="Lyche - kjøkken og bar">
+             <img class="slide2" src="3.jpg" alt="Lyche - kjøkken og bar">
+           </div>
 
-<!--       <img src="https://i.imgsafe.org/a80df03bac.jpg" alt="Lyche - kjøkken og bar" id="picture2" />
-      <img src="https://i.imgsafe.org/a80dd605ff.jpg" alt="Lyche - kjøkken og bar" id="picture3" /> -->
-    </section>
+	      <figcaption>foto: foto.samfundet.no</figcaption>
+  
+    	</section>
 
 
     <section id = "omoss">
@@ -56,132 +62,129 @@
     </section>
 
 
-    <section id="meny">
-      <h1>MENY</h1>
-      <h2>SMÅRETTER</h2>
-        <div id="kornbrd"> KORNBRØD 19,-/29,-</div>
+            <section id="meny">
+        <h1>Meny</h1>
 
-        <div id="kornbrdinfo">Serveres med pisket Rørossmør.
+        <div id = "smaretter">
+          <h2>SMÅRETTER</h2>
 
-        Inneholder: Gluten, melk</div>
+          <div id="kornbrd" onmouseover=display_content("kornbrdinfo") onmouseout=hide_content("kornbrdinfo")> KORNBRØD 19,-/29,-
+            <div id="kornbrdinfo">Serveres med pisket Rørossmør.
+              Inneholder: Gluten, melk</div>
+          </div>
+          <br>
+          <div id="sidesalat" onmouseover=display_content("sidesalatinfo") onmouseout=hide_content("sidesalatinfo")>SIDESALAT 19,-/29,-
+            <div id="sidesalatinfo">Med cherrytomater og vinaigrette.
+              Inneholder: Sulfitt</div>
+          </div>
+          <br>
+          <div id="blaskjell" onmouseover=display_content("blaskjellinfo") onmouseout=hide_content("blaskjellinfo")>HVITVINSDAMPEDE BLÅSKJELL 89,-/109,-
+            <div id="blaskjellinfo">Serveres med kornbrød og pisket Rørossmør.
+              Inneholder: Bløtdyr, gluten, melk, sulfitt</div>
+          </div>
+          <br>
+          <div id="litensuppe" onmouseover=display_content("litensuppeinfo") onmouseout=hide_content("litensuppeinfo")>LITEN SUPPE 39,-/55,-
+            <div id="litensuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør servitøren</div>
+          </div>
+          <br>
+        </div>
 
-        <div id="sidesalat">SIDESALAT 19,-/29,-</div>
+        <div id="hovedretter">
+          <h2>HOVEDRETTER</h2>
 
-        <div id="sidesalatinfo">Med cherrytomater og vinaigrette.
+          <div id="reinsdyr" onmouseover=display_content("reinsdyrinfo") onmouseout=hide_content("reinsdyrinfo")>REINSDYR 159,-/189,-
+            <div id="reinsdyrinfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
+            Inneholder: Melk, selleri, sulfitt</div>
+          </div>
+          <br>
+          <div id="klippfisk" onmouseover=display_content("klippfiskinfo") onmouseout=hide_content("klippfiskinfo")>KLIPPFISK 119,-/145,-
+            <div id="klippfiskinfo">Serveres med Karamellisert sjalottløk, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
+            Inneholder: Fisk, melk, sennep</div>
+          </div>
+          <br>
+          <div id="bygotto" onmouseover=display_content("bygottoinfo") onmouseout=hide_content("bygottoinfo")>BYGGOTTO 109,-/129,-
+            <div id="bygottoinfo">Byggrynsrisotto med løk, purre, gulrot og sopp. Serveres med chioggiabeter. Vegetar.
+            Inneholder: Gluten, melk, soya, sulfitt</div>
+          </div>
+          <br>
+          <div id="suppe" onmouseover=display_content("suppeinfo") onmouseout=hide_content("suppeinfo")>SUPPE 69,-/89,-
+            <div id="suppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
+          <br>
+          <div id="lychesalat" onmouseover=display_content("lychesalatinfo") onmouseout=hide_content("lychesalatinfo")>LYCHESALAT 79,-/99,-
+            <div id="lychesalatinfo">Med søt og syrlig valnøttsaus, quinoa, pinjekjerner, chevre fra Haukeli og Santa Kristina-skinke. Serveres med kornbrød og pisket Rørossmør.
+            Inneholder: Gluten, melk, nøtter, sulfitt</div>
+          </div>
+          <br>
+          <div id="lycheburger" onmouseover=display_content("lycheburgerinfo") onmouseout=hide_content("lycheburgerinfo")>LYCHEBURGER 109,-/129,- DOBBEL 139,-/159,-
+            <div id="lycheburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, bacon, pistou og ovnsbakte poteter.
+            Inneholder: Egg, gluten, melk, selleri, sennep, sulfitt</div>
+          </div>
+          <br>
+          <div id="blaburger" onmouseover=display_content("blaburgerinfo") onmouseout=hide_content("blaburgerinfo")>BLÅMUGGBURGER 109,-/129,- DOBBEL 139,-/159,-
+            <div id="blaburgerinfo">Serveres med aioli, cherrytomater, salat, blåmuggost fra Selbu, søt og syrlig valnøttsaus, pistou og ovnsbakte poteter.
+            Inneholder: Egg, gluten, melk, nøtter, selleri, sennep, sulfitt</div>
+          </div>
+          <br>
+          <div id="gburger" onmouseover=display_content("gburgerinfo") onmouseout=hide_content("gburgerinfo")>GULROTBURGER 85,-/105,- _**DOBBEL 105,-/125,-
+            <div id="gburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, pistou og ovnsbakte poteter. Vegetar, kan fåes vegan.
+            Inneholder: Gluten, selleri, melk, sennep, sulfitt</div>
+          </div>
+          <br>
+        </div>
 
-        Inneholder: Sulfitt</div>
+        <div id="dessert">
+          <h2>DESSERT</h2>
 
-        <div id="blaskjell">HVITVINSDAMPEDE BLÅSKJELL 89,-/109,-</div>
+          <div id="is" onmouseover=display_content("isinfo") onmouseout=hide_content("isinfo")>IS 35,-/45,-
+            <div id="isinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
+          <br>
+          <div id="crema" onmouseover=display_content("cremainfo") onmouseout=hide_content("cremainfo")>CREMA CATALANA 49,-/69,-
+            <div id="cremainfo">Fløtebasert dessert med kanel og appelsin. Serveres med glasert appensinskive
+            Inneholder: Egg, melk</div>
+          </div>
+          <br>
+          <div id="trippel" onmouseover=display_content("trippelinfo") onmouseout=hide_content("trippelinfo")>TRIPPELMOUSSE 49,-/69,-
+            <div id="trippelinfo">Solbærmousse, melkesjokolademousse og mørk sjokolademousse. Serveres med nøtter, solbærcoulis og stekt hvit sjokolade.
+            Inneholder: Egg, melk, nøtter</div>
+          </div>
+        </div>
+        <br>
+        <div id="barnemeny">
+          <h2>BARNEMENY</h2>
 
-        <div id="blaskjellinfo">Serveres med kornbrød og pisket Rørossmør.
+          <div id="barnesuppe" onmouseover=display_content("barnesuppeinfo") onmouseout=hide_content("barnesuppeinfo")>LITEN SUPPE 44,-
+            <div id="barnesuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør servitøren</div>
+          </div>
 
-        Inneholder: Bløtdyr, gluten, melk, sulfitt</div>
+          <div id="andeplser" onmouseover=display_content("andeplserinfo") onmouseout=hide_content("andeplserinfo")>ANDEPØLSER 85,-
+            <div id="andeplserinfo">Med timian og hvitløk. Serveres med ovnsstekte poteter og surkålmajones.
+            Inneholder: Egg, sennep, sulfitt</div>
+          </div>
 
-        <div id="litensuppe">LITEN SUPPE 39,-/55,-</div>
+          <div id="reinsdyrbarn" onmouseover=display_content("reinsdyrbarninfo") onmouseout=hide_content("reinsdyrbarninfo")>REINSDYR 105,-
+            <div id="rainsdyrbarninfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
+            Inneholder: Melk, selleri, sulfitt</div>
+          </div>
 
-        <div id="litensuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+          <div id="klippfiskbarn" onmouseover=display_content("klippfiskbarninfo") onmouseout=hide_content("klippfiskbarninfo")>KLIPPFISK 85,-
+            <div id="klippfiskbarninfo">Serveres med Karamellisert sjalottløk, rødbetepuré, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
+            Inneholder: Fisk, melk, selleri, sulfitt</div>
+          </div>
 
-        Inneholder: Spør servitøren</div>
+          <div id="barneis" onmouseover=display_content("barneisinfo") onmouseout=hide_content("barneisinfo")>IS 25,-
+            <div id="barneisinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
 
-        <h2>HOVEDRETTER</h2>
-        <div id="reinsdyr">REINSDYR 159,-/189,-</div>
+        </div>
 
-        <div id="reinsdyrinfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
-
-        Inneholder: Melk, selleri, sulfitt</div>
-
-        <div id="klippfisk">KLIPPFISK 119,-/145,-</div>
-
-        <div id="klippfiskinfo">Serveres med Karamellisert sjalottløk, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
-
-        Inneholder: Fisk, melk, sennep</div>
-
-        <div id="bygotto">BYGGOTTO 109,-/129,-</div>
-
-        <div id="bygottoinfo">Byggrynsrisotto med løk, purre, gulrot og sopp. Serveres med chioggiabeter. Vegetar.
-
-        Inneholder: Gluten, melk, soya, sulfitt</div>
-
-        <div id="suppe">SUPPE 69,-/89,-</div>
-
-        <div id="suppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
-
-        Inneholder: Spør en av våre servitører</div>
-
-        <div id="lychesalat">LYCHESALAT 79,-/99,-</div>
-
-        <div id="lychesalatinfo">Med søt og syrlig valnøttsaus, quinoa, pinjekjerner, chevre fra Haukeli og Santa Kristina-skinke. Serveres med kornbrød og pisket Rørossmør.
-
-        Inneholder: Gluten, melk, nøtter, sulfitt</div>
-
-        <div id="lycheburger">LYCHEBURGER 109,-/129,- DOBBEL 139,-/159,-</div>
-
-        <div id="lycheburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, bacon, pistou og ovnsbakte poteter.
-
-        Inneholder: Egg, gluten, melk, selleri, sennep, sulfitt</div>
-
-        <div id="blaburger">BLÅMUGGBURGER 109,-/129,- DOBBEL 139,-/159,-</div>
-
-        <div id="blaburgerinfo">Serveres med aioli, cherrytomater, salat, blåmuggost fra Selbu, søt og syrlig valnøttsaus, pistou og ovnsbakte poteter.
-
-        Inneholder: Egg, gluten, melk, nøtter, selleri, sennep, sulfitt</div>
-
-        <div id="gburger">GULROTBURGER 85,-/105,- _**DOBBEL 105,-/125,-</div>
-
-        <div id="gburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, pistou og ovnsbakte poteter. Vegetar, kan fåes vegan.
-
-        Inneholder: Gluten, selleri, melk, sennep, sulfitt</div>
-
-        <h2>DESSERT</h2>
-        <div id="is">IS 35,-/45,-</div>
-
-        <div id="isinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
-
-        Inneholder: Spør en av våre servitører</div>
-
-        <div id="crema">CREMA CATALANA 49,-/69,-</div>
-
-        <div id="cremainfo">Fløtebasert dessert med kanel og appelsin. Serveres med glasert appensinskive
-
-        Inneholder: Egg, melk</div>
-
-        <div id="trippel">TRIPPELMOUSSE 49,-/69,-</div>
-
-        <div id="trippelinfo">Solbærmousse, melkesjokolademousse og mørk sjokolademousse. Serveres med nøtter, solbærcoulis og stekt hvit sjokolade.
-
-        Inneholder: Egg, melk, nøtter</div>
-
-        <h2>BARNEMENY</h2>
-        <div id="barnesuppe">LITEN SUPPE 44,-</div>
-
-        <div id="barnesuppe">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
-
-        Inneholder: Spør servitøren</div>
-
-        <div id="andeplser">ANDEPØLSER 85,-</div>
-
-        <div id="andeplserinfo">Med timian og hvitløk. Serveres med ovnsstekte poteter og surkålmajones.
-
-        Inneholder: Egg, sennep, sulfitt</div>
-
-        <div id="reinsdyrbarn">REINSDYR 105,-</div>
-
-        <div id="rainsdyrbarninfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
-
-        Inneholder: Melk, selleri, sulfitt</div>
-
-        <div id="klippfiskbarn">KLIPPFISK 85,-</div>
-
-        <div id="klippfiskbarninfo">Serveres med Karamellisert sjalottløk, rødbetepuré, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
-
-        Inneholder: Fisk, melk, selleri, sulfitt</div>
-
-        <div id="barneis">IS 25,-</div>
-
-        <div id="barneisinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
-
-        Inneholder: Spør en av våre servitører</div>
-    </section>
+      </section>
 
 
     <section id ="reservasjon">
