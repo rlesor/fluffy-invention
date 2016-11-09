@@ -47,3 +47,7 @@ h1:after
     display:block;
     border:1px solid #262626;
 }
+
+.infoseksjon {
+  min-height: 100vh;
+}
