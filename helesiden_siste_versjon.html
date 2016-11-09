@@ -210,17 +210,17 @@
     <section id ="bordreservasjon">
       <form id="reservasjon" action="samfundet_server">
         <h1>Bordreservasjon</h1>
-        <p id=res_ant_pers>
-          Antall personer:  <input type="number" id="antPers"><br>
+        <p>
+          Antall personer:  <input type="number" id="antPers" required><br>
           <p>Mer enn 12 personer? Send oss en <a href="mailto:lyche@samfundet.no"           target="_top">mail</a>.
           </p>
 	      </p>
 
-        Starttidspunkt: <input type="datetime-local" id="starttidspunkt"     max="today" placeholder='20/10/2016 12:00'>
+        Starttidspunkt: <input type="datetime-local" id="starttidspunkt" min="today" placeholder='20/10/2016 12:00' required>
 
         <p id=res_varighet>
           Varighet:
-            <select id="varighet_min">
+            <select id="varighet_min" required>
               <option value="30">30 minutter</option>
               <option value="60">60 minutter</option>
               <option value="90">90 minutter</option>
@@ -229,7 +229,7 @@
         </p>
 
         <p id="res_navn">
-          Navn: <input type="text" id="res_navn" placeholder="Navn Navnesen">
+          Navn: <input type="text" id="res_navn" placeholder="Navn Navnesen" required>
         </p>
 
         <p>
@@ -241,10 +241,10 @@
           </select>
         </p>
 
-        Telefonnummer: <input type="text" id="res_telefonnummer">
+        Telefonnummer: <input type="text" id="res_telefonnummer" required>
 
         <br>
-         Epost: <input type="email" id="res_epost">
+         Epost: <input type="email" id="res_epost" required>
         <br>
          Allergier: <input type="text" id="res_allergier">
 
