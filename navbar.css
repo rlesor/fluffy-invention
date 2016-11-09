@@ -45,7 +45,7 @@ li a, .menu_button {
 
 li a:hover, .dropdown:hover .menu_button {
     background-color: #a36a58;
-    font-weight: bold;
+    color: black;
 }
 
 li.dropdown {
@@ -70,7 +70,6 @@ li.dropdown {
 
 .menu_content a:hover {
   background-color: #a37d4b;
-  font-weight: bold;
 }
 
 .dropdown:hover .menu_content {
