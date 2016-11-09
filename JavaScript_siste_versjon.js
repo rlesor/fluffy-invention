@@ -27,7 +27,6 @@ function changeClick(n){   //Function that changes the source of the main image
 }									       //bildeId
 }
 
-}
 //Navigation bar
 
 //this javascript places the navigation bar at the right place when the user is navigating the page
