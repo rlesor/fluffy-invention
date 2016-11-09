@@ -22,7 +22,7 @@
   }
 }
 
-ul {
+#navigation_bar ul {
     list-style-type: none;
     background-color:transparent;
     margin: 0 auto;
@@ -31,11 +31,11 @@ ul {
     min-width: 312px;
 }
 
-li {
+#navigation_bar ul li {
     float: left;
 }
 
-li a, .menu_button {
+#navigation_bar ul li a, .menu_button {
     display: inline-block;
     color: #4d3a32;
     padding: 14px 16px;
@@ -43,12 +43,12 @@ li a, .menu_button {
 
 }
 
-li a:hover, .dropdown:hover .menu_button {
+#navigation_bar ul li a:hover, .dropdown:hover .menu_button {
     background-color: #a36a58;
     color: black;
 }
 
-li.dropdown {
+#navigation_bar ul li.dropdown {
     display: inline-block;
 }
 
