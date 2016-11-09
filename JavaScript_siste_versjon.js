@@ -64,12 +64,13 @@ window.onscroll = function nav_scroll() {                                //this 
 
 //Menu - show more information:
 
-function display_content(id) {					
-  document.getElementById(id).style.display = "block";	// Displays info-div as block when hovered
-
-}
-function hide_content(id) {
-  document.getElementById(id).style.display = "none"; //Hides info-div when hovered
+function display_hide(id){
+    var div = document.getElementById(id);
+    if (div.className === "foodinfo") {
+        div.className = "foodinfo active";
+    } else {
+        div.className = "foodinfo";
+    }
 }
 
 // Slideshow:
