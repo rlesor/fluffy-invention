@@ -1,5 +1,13 @@
-input[type='text'], select, button
+input, select, button
 {
-    background: #e2cfb6;
-    border: none;
+    background: #e2cfb6; 
+    border: #cdab7e;
+    border-radius: 5px;
+    size: 30px;
+    margin: 10px;
+    font-size: large;
+    padding: 5px;
+}
+button {
+	background: #e2cfb6; 
 }
