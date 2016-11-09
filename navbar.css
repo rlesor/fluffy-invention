@@ -1,10 +1,25 @@
 #navigation_bar {
-  background-color: rgba(171,130,111,0.9)  ;
-  position: fixed;
+  background-color: black;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 4;
+  z-index: 1;   
+  
+}
+#nav_bar_div {
+  width: auto;
+  height: 26px; 
+}
+@media screen and (max-width:626px){
+  #nav_bar_div {
+    height: 72px;
+  }
+}
+@media screen and (max-width:347px){
+  #nav_bar_div {
+    height: 118px;
+  }
 }
 
 ul {
