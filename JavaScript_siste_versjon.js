@@ -1,17 +1,13 @@
 //Gallery
 
-function changeSwap(event){
-		let targetSrc = event.target;
-		if(targetSrc.tagName == "IMG"){
-			document.getElementById("mainImg").src = targetSrc.getAttribute("src");
-		}
-	}
-	
-let slideIndex = 1;
-function changeIndex(n, n2){
+//This segment will create a gallery of images, where one can navigate the images using both buttons on a larger main image,
+//aswell as the mouse cursor, on a gallery underneath.
+
+let slideIndex = 1;              //The slideIndex decides which image that is shown as the main image
+function changeIndex(n, n2){	 //the parameter n is +1 (clicking right button) or -1 (left button) n2 is the slideIndex. See HTML.
 	slideIndex += n;
-	if(slideIndex > 9){
-	slideIndex = 1 ;
+	if(slideIndex > 9){    	 //If slideIndex
+		slideIndex = 1 ;
 	}
 	if(slideIndex < 1){
 		slideIndex = 9;
