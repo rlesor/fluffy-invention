@@ -1,3 +1,5 @@
+//Gallery
+
 function changeSwap(event){
 		let targetSrc = event.target;
 		if(targetSrc.tagName == "IMG"){
@@ -29,6 +31,8 @@ function changeClick(n){
 	let targetSrc = document.getElementById(bildeId);
 	document.getElementById("mainImg").src = targetSrc.getAttribute("src")
 }
+//Navigation bar 
+
 //this javascript places the navigation bar at the right place when the user is navigating the page
 var y=0;         //variable that shows the where on the page the user is
 var top_side=0;  //variable that represent where the top of the wrapper is
@@ -61,3 +65,36 @@ window.onscroll = function nav_scroll() {                                //this 
 //endre position absolute fra fixed til absolute i css (#navigation_bar)
 //laget en ny div med id tag, og laget css til den 
 //css må skrives slik at div skalerer med navbar 
+
+//Menu - show more information:
+
+function display_content(id) {
+  document.getElementById(id).style.display = "block";
+
+}
+function hide_content(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// Slideshow:
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+// Inspired by this tutorial: http://www.w3schools.com/howto/howto_js_slideshow.asp
