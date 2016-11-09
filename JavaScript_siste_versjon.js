@@ -1,29 +1,32 @@
 //Gallery
 
+//This segment will create a gallery of images, where one can navigate the images using both buttons on a larger main image,
+//aswell as the mouse cursor, on a gallery underneath.
 
-let slideIndex_gallery = 1;
-function changeIndex(n, n2){
+let slideIndex_gallery = 1;              //The slideIndex decides which image that is shown as the main image
+function changeIndex(n, n2){	 //the parameter n is +1 (clicking right button) or -1 (left button) n2 is the slideIndex. See HTML.
 	slideIndex_gallery += n;
-	if(slideIndex_gallery > 9){
-	slideIndex_gallery = 1 ;
+	if(slideIndex_gallery > 9){    	  //If slideIndex is larger than 9 (bilde9) the main image should be set to the first in the gallery
+		slideIndex_gallery = 1 ;  //(bilde1) upon clicking the right button (slideIndex + 1)
 	}
-	if(slideIndex_gallery < 1){
-		slideIndex_gallery = 9;
+	if(slideIndex_gallery < 1){     //The same as above, only that bilde1 (the first image) becomes bilde9 (the last image)
+		slideIndex_gallery = 9; //upon clicking the left button (-1)
 	}
-
-	if(n2 != 0){
-		slideIndex_gallery = n2;
+		
+	if(n2 != 0){			 //When clicking the right and left buttons, n2 = 0 is sent to this function. However, if one
+		slideIndex_gallery = n2; //clickes an image in the gallery it will. n2 has the value of the new slideIndex.
 	}
-
-	changeClick(slideIndex_gallery)
-	console.log(slideIndex_gallery)
+		
+	changeClick(slideIndex_gallery) //the slideIndex is sent into the changeClick function.
+	
+	
+function changeClick(n){   //Function that changes the source of the main image
+	let bildeId = "bilde"+n.toString();                   //bildeId becomes the id of the various images (bilde1, bilde2....bilde9)
+	let targetSrc = document.getElementById(bildeId);     //Retrieves the source of bildeId
+	document.getElementById("mainImg").src = targetSrc.getAttribute("src") //Changes the source of the main image to the source of
+}									       //bildeId
 }
 
-
-function changeClick(n){
-	let bildeId = "bilde"+n.toString();
-	let targetSrc = document.getElementById(bildeId);
-	document.getElementById("mainImg").src = targetSrc.getAttribute("src")
 }
 //Navigation bar
 
