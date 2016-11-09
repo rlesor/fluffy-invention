@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  
+
     <link rel="stylesheet" type="text/css" href= "css/lyche.css">
     <link rel="stylesheet" type="text/css" href= "css/forside.css">
     <link rel="stylesheet" type="text/css" href= "css/meny.css">
@@ -12,12 +12,12 @@
     <link href="css/gallery.css" rel="stylesheet" type="text/css">
 
   </head>
-	
+
   <body id="top" onresize="resize()">
     <header>
       <img src="bilder/logo.png" alt="Lyche - kjøkken og bar" id="logo" />
     </header>
-	  
+
     <div class= "wrapper">
       <div id="nav_bar_div">
         <div id ="navigation_bar">
@@ -35,26 +35,34 @@
             <li><a href="#galleri">Bildegalleri</a></li>
             <li><a href="#footer">Åpningstider</a></li>
             <li><a href="#footer">Kontakt oss</a></li>
-	    <li><a href="#top">Til toppen</a></li>
+	          <li><a href="#top">Til toppen</a></li>
             </li>
          </ul>
         </div>
       </div>
 
+      <div class="slideshow">
 
-	<section id = "forside">
-      	   <div id= "slideshow_content">
-             <img id="slide1" src="1.jpg" alt="Lyche - kjøkken og bar">
-             <img id="slide2" src="2.jpg" alt="Lyche - kjøkken og bar">
-             <img class="slide2" src="3.jpg" alt="Lyche - kjøkken og bar">
-           </div>
+        <div class="slides fade">
+          <img src="bilder/1.jpg">
+        </div>
 
-	   <div style="text-align:center">
+        <div class="slides fade">
+          <img src="bilder/2.jpg">
+        </div>
+
+        <div class="slides fade">
+          <img src="bilder/3.jpg">
+        </div>
+      </div>
+        <br>
+
+
+    <div style="text-align:center">
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-  </div>
-
+    </div>
 
     <section id = "omoss">
       <h1>Om oss</h1>
@@ -65,7 +73,7 @@
 				og moderne på samme tid. På Lyche koser du deg hele uka igjennom.</p>
 				<p>På fredager og lørdag, fra 23:00 til 02:00, er det 20 års aldersgrense i Lyche grunnet mulighet til å kjøpe sprit i baren. Ellers er
 				det ikke noen aldersgrense i restauranten.</p>
-			<img id="crew" src="digfk2033.jpg" alt="Frivillige i Lyche">
+			<!--<img id="crew" src="bilder/digfk2033.jpg" alt="Frivillige i Lyche"> -->
       				<figcaption>foto: foto.samfundet.no</figcaption>
     </section>
 
@@ -245,22 +253,22 @@
 
     <section id = "galleri">
     	<div id="mainImgWrap">
-		<img src="gallery_bilder/digeø0616.jpg" id="mainImg">
+		<img src="bilder/digeø0616.jpg" id="mainImg">
 			<span id="right" onclick="changeIndex(+1, 0)"> > </span>
 			<span id="left" onclick="changeIndex(-1, 0)"> < </span>
 		</div>
 		<br>
 		<div id="galImg" onclick="changeSwap(event)">
-			<img src="gallery_bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)">
-			<img src="gallery_bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)">
-			<img src="gallery_bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)">
-			<img src="gallery_bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)">
+			<img src="bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)">
+			<img src="bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)">
+			<img src="bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)">
+			<img src="bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)">
 			<br>
-			<img src="gallery_bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)">
-			<img src="gallery_bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)">
-			<img src="gallery_bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
-			<img src="gallery_bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
-			<img src="gallery_bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
+			<img src="bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)">
+			<img src="bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)">
+			<img src="bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
+			<img src="bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
+			<img src="bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
 		<figcaption>foto: foto.samfundet.no</figcaption>
 		</div>
     </section>
@@ -292,6 +300,6 @@
 			</ul>
 		</footer>
       </div>
-	<script src="JavaScript_en_ing.js"></script>
+	<script src="lyche.js"></script>
   </body>
 </html>
