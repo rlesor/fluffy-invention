@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href= "meny.css">
     <link rel="stylesheet" type="text/css" href= "navbar.css">
     <link rel="stylesheet" type="text/css" href= "footer.css">
+    <link href="gallery_css/gallery.css" rel="stylesheet" type="text/css">
 
   </head>
   <body id="top">
@@ -236,16 +237,24 @@
 
 
     <section id = "galleri">
-      <h1>Bildegalleri</h1>
-      <img id="galleriBilde1" src="digeø0616.jpg">
-      <img id="galleriBilde2" src="digfd1906.jpg">
-      <img id="galleriBilde3" src="digfd1927.jpg">
-      <img id="galleriBilde4" src="digfd2218.jpg">
-      <img id="galleriBilde5" src="digfe2009.jpg">
-      <img id="galleriBilde6" src="digfl1350.jpg">
-      <img id="galleriBilde7" src="digfl1351.jpg">
-      <img id="galleriBilde8" src="digfl2016.jpg">
-      <figcaption>foto: foto.samfundet.no</figcaption>
+    	<div id="mainImgWrap">
+		<img src="gallery_bilder/digeø0616.jpg" id="mainImg">
+			<span id="right" onclick="changeIndex(+1, 0)"> > </span>
+			<span id="left" onclick="changeIndex(-1, 0)"> < </span>
+		</div>
+		<br>
+		<div id="galImg" onclick="changeSwap(event)">
+			<img src="gallery_bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)">
+			<img src="gallery_bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)">
+			<img src="gallery_bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)">
+			<img src="gallery_bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)">
+			<br>
+			<img src="gallery_bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)">
+			<img src="gallery_bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)">
+			<img src="gallery_bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
+			<img src="gallery_bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
+			<img src="gallery_bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
+		</div>
     </section>
 
     <section id ="map">
@@ -275,5 +284,6 @@
 			</ul>
 		</footer>
       </div>
+	<script src="JavaScript_en_ing.js"></script>
   </body>
 </html>
