@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href= "lyche.css">
-    <link rel="stylesheet" type="text/css" href= "forside.css">
-    <link rel="stylesheet" type="text/css" href= "meny.css">
-    <link rel="stylesheet" type="text/css" href= "navbar.css">
-    <link rel="stylesheet" type="text/css" href= "footer.css">
-    <link href="gallery_css/gallery.css" rel="stylesheet" type="text/css">
+	  
+    <link rel="stylesheet" type="text/css" href= "css/lyche.css">
+    <link rel="stylesheet" type="text/css" href= "css/forside.css">
+    <link rel="stylesheet" type="text/css" href= "css/meny.css">
+    <link rel="stylesheet" type="text/css" href= "css/navbar.css">
+    <link rel="stylesheet" type="text/css" href= "css/footer.css">
+    <link href="css/gallery.css" rel="stylesheet" type="text/css">
 
   </head>
+	
   <body id="top" onresize="resize()">
     <header>
-      <img src="../bilder/logo.png" alt="Lyche - kjøkken og bar" id="logo" />
+      <img src="bilder/logo.png" alt="Lyche - kjøkken og bar" id="logo" />
     </header>
 	  
     <div class= "wrapper">
@@ -33,6 +35,7 @@
             <li><a href="#galleri">Bildegalleri</a></li>
             <li><a href="#footer">Åpningstider</a></li>
             <li><a href="#footer">Kontakt oss</a></li>
+	    <li><a href="#top">Til toppen</a></li>
             </li>
          </ul>
         </div>
@@ -46,9 +49,11 @@
              <img class="slide2" src="3.jpg" alt="Lyche - kjøkken og bar">
            </div>
 
-	      <figcaption>foto: foto.samfundet.no</figcaption>
-  
-    	</section>
+	   <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
 
 
     <section id = "omoss">
@@ -60,15 +65,15 @@
 				og moderne på samme tid. På Lyche koser du deg hele uka igjennom.</p>
 				<p>På fredager og lørdag, fra 23:00 til 02:00, er det 20 års aldersgrense i Lyche grunnet mulighet til å kjøpe sprit i baren. Ellers er
 				det ikke noen aldersgrense i restauranten.</p>
-			<img id="crew" src="digfk2033.jpg">
+			<img id="crew" src="digfk2033.jpg" alt="Frivillige i Lyche">
       				<figcaption>foto: foto.samfundet.no</figcaption>
     </section>
 
 
-            <section id="meny">
+           <section id="meny">
         <h1>Meny</h1>
 
-        <div id = "smaretter">
+        <div id ="smaretter">
           <h2>SMÅRETTER</h2>
 
           <div id="kornbrd" onmouseover=display_content("kornbrdinfo") onmouseout=hide_content("kornbrdinfo")> KORNBRØD 19,-/29,-
@@ -164,22 +169,22 @@
             <div id="barnesuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
             Inneholder: Spør servitøren</div>
           </div>
-
+          <br>
           <div id="andeplser" onmouseover=display_content("andeplserinfo") onmouseout=hide_content("andeplserinfo")>ANDEPØLSER 85,-
             <div id="andeplserinfo">Med timian og hvitløk. Serveres med ovnsstekte poteter og surkålmajones.
             Inneholder: Egg, sennep, sulfitt</div>
           </div>
-
-          <div id="reinsdyrbarn" onmouseover=display_content("reinsdyrbarninfo") onmouseout=hide_content("reinsdyrbarninfo")>REINSDYR 105,-
+          <br>
+          <div id="reinsdyrbarn" onmouseover=display_content("rainsdyrbarninfo") onmouseout=hide_content("rainsdyrbarninfo")>REINSDYR 105,-
             <div id="rainsdyrbarninfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
             Inneholder: Melk, selleri, sulfitt</div>
           </div>
-
+          <br>
           <div id="klippfiskbarn" onmouseover=display_content("klippfiskbarninfo") onmouseout=hide_content("klippfiskbarninfo")>KLIPPFISK 85,-
             <div id="klippfiskbarninfo">Serveres med Karamellisert sjalottløk, rødbetepuré, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
             Inneholder: Fisk, melk, selleri, sulfitt</div>
           </div>
-
+          <br>
           <div id="barneis" onmouseover=display_content("barneisinfo") onmouseout=hide_content("barneisinfo")>IS 25,-
             <div id="barneisinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
             Inneholder: Spør en av våre servitører</div>
@@ -256,6 +261,7 @@
 			<img src="gallery_bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
 			<img src="gallery_bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
 			<img src="gallery_bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
+		<figcaption>foto: foto.samfundet.no</figcaption>
 		</div>
     </section>
 
