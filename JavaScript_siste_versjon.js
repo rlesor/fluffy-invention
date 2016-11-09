@@ -104,8 +104,6 @@ var tidspunkt=document.forms["reservasjon"]["res_tidspunkt"].value;
 var varighet=document.forms["reservasjon"]["res_varighet_min"].value;
 var telefonnummer=document.forms["reservasjon"]["res_telefonnummer"].value;
 var epost=document.forms["reservasjon"]["res_epost"].value;
-}
-
 
 if (pers==null || pers=="" || pers>=12 || tidspunkt == "" || varighet == "Varighet" || navn==null || navn=="" || telefonnummer == null|| telefonnummer=="" || epost ==null || epost=="" )
   {
