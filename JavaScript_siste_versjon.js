@@ -64,12 +64,12 @@ window.onscroll = function nav_scroll() {                                //this 
 
 //Menu - show more information:
 
-function display_hide(id){
-    var div = document.getElementById(id);
-    if (div.className === "foodinfo") {
-        div.className = "foodinfo active";
-    } else {
-        div.className = "foodinfo";
+function display_hide(id){			
+    var div = document.getElementById(id);		// Gets the element by id in the html file, and saves it as "div"
+    if (div.className === "foodinfo") {			// Checks with a strict comparison operator if the element is the same as "foodinfo" class
+        div.className = "foodinfo active";			// The div becomes "foodinfo active" The information will now show because of the css (meny)
+    } else {						
+        div.className = "foodinfo";			// Else, the div becomes "foodinfo" and the information will be hidden because of the css. 
     }
 }
 
