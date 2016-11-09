@@ -95,26 +95,3 @@ function showSlides() {
 }
 // Inspired by this tutorial: http://www.w3schools.com/howto/howto_js_slideshow.asp
 
-//Validation form
-function validateForm()
-{
-//The following lines collect values from specific input fields in the form "reservasjon". It only collect the required ones. 
-var pers=document.forms["reservasjon"]["res_antPers"].value;
-var tidspunkt = document.forms["reservasjon"]["res_tidspunkt"].value;
-var navn=document.forms["reservasjon"]["res_navn"].value;
-var tidspunkt=document.forms["reservasjon"]["res_tidspunkt"].value;
-var varighet=document.forms["reservasjon"]["res_varighet_min"].value;
-var telefonnummer=document.forms["reservasjon"]["res_telefonnummer"].value;
-var epost=document.forms["reservasjon"]["res_epost"].value;
-
-//If any of the required fields are empty or null, the function will return false. Furthermore, the form will not be validated nor submitted. 
-if (pers==null || pers=="" || pers>=12 || tidspunkt == "" || varighet == "Varighet" || navn==null || navn=="" || telefonnummer == null|| telefonnummer=="" || epost ==null || epost=="" )
-  {
-  alert("Please Fill All Required Field"); //If the fields are empty, the user skall be alerted. 
-  return false;
-  }
-else {
-	return true;
-    }
-}
-
