@@ -12,19 +12,19 @@
 	background-color:white;
 	font-size:0.5em;
 	}
-			
+
 #right{
 	right:5px;
 	}
-	
+
 #left{
 	left:5px;
 	}
-			
+
 #left:hover, #right:hover{
 	cursor:pointer;
 	}
-			
+
 #mainImg{
 	height:100%;
 	width:100%;

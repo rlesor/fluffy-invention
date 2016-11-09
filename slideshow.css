@@ -1,0 +1,39 @@
+.slides {
+  display: none;
+  width: 20%;
+    min-width: 150px;
+  height: auto;
+  margin-top: 40px;
+}
+
+/* Slideshow container */
+.slideshow {
+  width: 100%;
+  text-align: center;
+  margin: 2% 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active {
+  background-color: #524737;
+}
+
+/* Animation of the pictures in the slideshow */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
