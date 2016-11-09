@@ -8,6 +8,21 @@ input, select, button
     font-size: large;
     padding: 5px;
 }
-button {
-	background: #e2cfb6; 
+
+#reservasjon input {
+	box-shadow: 3px 3px 1px #888888;
+	-webkit-box-shadow: inset 3px 3px 1px #888888;
+}
+
+#reservasjon select {
+	-webkit-box-shadow: inset -3px -3px 1px #888888;
+}
+
+#reservasjon #res_send {
+	background-color:#936a39;
+	box-shadow: 3px 3px 1px #888888;
+}
+
+#bordreservasjon {
+	position: auto;
 }
