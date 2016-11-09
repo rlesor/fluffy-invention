@@ -112,5 +112,8 @@ if (pers==null || pers=="" || pers>=12 || tidspunkt == "" || varighet == "Varigh
   alert("Please Fill All Required Field"); //If the fields are empty, the user skall be alerted. 
   return false;
   }
+else {
+	return true;
+    }
 }
 
