@@ -1,12 +1,16 @@
 #footer{
-	height:200px;
+	height:100px;  
+  background-color: black;
+  color: white;
 }
-#footer_list{
-	float:left;
+#footer_list li{
 	list-style-type:none;
+  color:white;   
 }
-
-#footer_p{
+#footer p{
 	float:right;
 	margin-right:5%;
+}
+a {
+  color:white;
 }
