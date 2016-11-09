@@ -35,13 +35,13 @@ function scrollToTop() {
 /* function found here: https://gist.github.com/ricardozea/abb9f98a19f6d04a0269 */
 
 /* slideshow */
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slides");
-    var dots = document.getElementsByClassName("dot");
+    let i;
+    const slides = document.getElementsByClassName("slides");
+    const dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
     }
@@ -54,4 +54,5 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
 /*slideshow ferdig*/
