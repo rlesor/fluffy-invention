@@ -14,7 +14,7 @@ section {
   color: #262626;
 
 }
-#omoss, #meny, #galleri, #reservasjon, #map{
+#omoss, #meny, #galleri, #bordreservasjon, #map{
   max-width: 600px;
   border-left: 2px dotted #dbc3a3;
   border-right: 2px dotted #dbc3a3;
