@@ -1,0 +1,48 @@
+#mainImgWrap{
+	position:relative;
+	height:480px;
+	width:400px;
+	border:3px solid grey;
+	}
+#left, #right{
+	position:absolute;
+	top:45%;
+	z-index:1;
+	padding:10px;
+	background-color:white;
+	}
+			
+#right{
+	right:5px;
+	}
+	
+#left{
+	left:5px;
+	}
+			
+#left:hover, #right:hover{
+	cursor:pointer;
+	}
+			
+#mainImg{
+	height:100%;
+	width:100%;
+	z-index:2;
+	}
+
+.galleryImg{
+	height:100px;
+	width:100px;
+	border:3px solid grey;
+	}
+
+.galleryImg:hover{
+	border-color:red;
+	cursor:pointer;
+	}
+
+#galImg{
+	position:absolute;
+	right:0px;
+	top:0px;
+	}
