@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "lyche.css">
+    <link rel="stylesheet" type="text/css" href= "forside.css">
+    <link rel="stylesheet" type="text/css" href= "meny.css">
+    <link rel="stylesheet" type="text/css" href= "navbar.css">
+    <link rel="stylesheet" type="text/css" href= "footer.css">
+    <link href="gallery_css/gallery.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body id="top" onresize="resize()">
+    <header>
+      <img src="../bilder/logo.png" alt="Lyche - kjøkken og bar" id="logo" />
+    </header>
+	  
+    <div class= "wrapper">
+      <div id="nav_bar_div">
+        <div id ="navigation_bar">
+          <ul>
+            <li><a href="#omoss">Om Lyche</a></li>
+            <li class="dropdown">
+              <a href="#meny" class="menu_button">Meny</a>
+              <div class="menu_content">
+                <a href="#smaaretter">Småretter</a>
+                <a href="#hovedretter">Hovedretter</a>
+                <a href="#barnemeny">Barnemeny</a>
+                <a href="#dessert">Dessert</a>
+              </div>
+            <li><a href="#reservasjon">Reservasjon</a></li>
+            <li><a href="#galleri">Bildegalleri</a></li>
+            <li><a href="#footer">Åpningstider</a></li>
+            <li><a href="#footer">Kontakt oss</a></li>
+            </li>
+         </ul>
+        </div>
+      </div>
+
+
+	<section id = "forside">
+      	   <div id= "slideshow_content">
+             <img id="slide1" src="1.jpg" alt="Lyche - kjøkken og bar">
+             <img id="slide2" src="2.jpg" alt="Lyche - kjøkken og bar">
+             <img class="slide2" src="3.jpg" alt="Lyche - kjøkken og bar">
+           </div>
+
+	      <figcaption>foto: foto.samfundet.no</figcaption>
+  
+    	</section>
+
+
+    <section id = "omoss">
+      <h1>Om oss</h1>
+			<h2>Lyche Kjøkken og Bar</h2>
+				<p>Bar, kjøkken, vin, mat, behagelig atmosfære, spennende, unikt. På Lyche vil alle kunne finne sin favorittplass uansett om man er
+				mange eller få, skal spise eller drikke, er på date eller for å møte venner. Både på en rolig tirsdag eller festfylt lørdag. Hele uka
+				igjennom tilbys det behagelig bakgrunnsmusikk, gode sofaer, myke stoler i et lokale preget av farger og kontraster, og som er klassisk
+				og moderne på samme tid. På Lyche koser du deg hele uka igjennom.</p>
+				<p>På fredager og lørdag, fra 23:00 til 02:00, er det 20 års aldersgrense i Lyche grunnet mulighet til å kjøpe sprit i baren. Ellers er
+				det ikke noen aldersgrense i restauranten.</p>
+			<img id="crew" src="digfk2033.jpg">
+      				<figcaption>foto: foto.samfundet.no</figcaption>
+    </section>
+
+
+            <section id="meny">
+        <h1>Meny</h1>
+
+        <div id = "smaretter">
+          <h2>SMÅRETTER</h2>
+
+          <div id="kornbrd" onmouseover=display_content("kornbrdinfo") onmouseout=hide_content("kornbrdinfo")> KORNBRØD 19,-/29,-
+            <div id="kornbrdinfo">Serveres med pisket Rørossmør.
+              Inneholder: Gluten, melk</div>
+          </div>
+          <br>
+          <div id="sidesalat" onmouseover=display_content("sidesalatinfo") onmouseout=hide_content("sidesalatinfo")>SIDESALAT 19,-/29,-
+            <div id="sidesalatinfo">Med cherrytomater og vinaigrette.
+              Inneholder: Sulfitt</div>
+          </div>
+          <br>
+          <div id="blaskjell" onmouseover=display_content("blaskjellinfo") onmouseout=hide_content("blaskjellinfo")>HVITVINSDAMPEDE BLÅSKJELL 89,-/109,-
+            <div id="blaskjellinfo">Serveres med kornbrød og pisket Rørossmør.
+              Inneholder: Bløtdyr, gluten, melk, sulfitt</div>
+          </div>
+          <br>
+          <div id="litensuppe" onmouseover=display_content("litensuppeinfo") onmouseout=hide_content("litensuppeinfo")>LITEN SUPPE 39,-/55,-
+            <div id="litensuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør servitøren</div>
+          </div>
+          <br>
+        </div>
+
+        <div id="hovedretter">
+          <h2>HOVEDRETTER</h2>
+
+          <div id="reinsdyr" onmouseover=display_content("reinsdyrinfo") onmouseout=hide_content("reinsdyrinfo")>REINSDYR 159,-/189,-
+            <div id="reinsdyrinfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
+            Inneholder: Melk, selleri, sulfitt</div>
+          </div>
+          <br>
+          <div id="klippfisk" onmouseover=display_content("klippfiskinfo") onmouseout=hide_content("klippfiskinfo")>KLIPPFISK 119,-/145,-
+            <div id="klippfiskinfo">Serveres med Karamellisert sjalottløk, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
+            Inneholder: Fisk, melk, sennep</div>
+          </div>
+          <br>
+          <div id="bygotto" onmouseover=display_content("bygottoinfo") onmouseout=hide_content("bygottoinfo")>BYGGOTTO 109,-/129,-
+            <div id="bygottoinfo">Byggrynsrisotto med løk, purre, gulrot og sopp. Serveres med chioggiabeter. Vegetar.
+            Inneholder: Gluten, melk, soya, sulfitt</div>
+          </div>
+          <br>
+          <div id="suppe" onmouseover=display_content("suppeinfo") onmouseout=hide_content("suppeinfo")>SUPPE 69,-/89,-
+            <div id="suppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
+          <br>
+          <div id="lychesalat" onmouseover=display_content("lychesalatinfo") onmouseout=hide_content("lychesalatinfo")>LYCHESALAT 79,-/99,-
+            <div id="lychesalatinfo">Med søt og syrlig valnøttsaus, quinoa, pinjekjerner, chevre fra Haukeli og Santa Kristina-skinke. Serveres med kornbrød og pisket Rørossmør.
+            Inneholder: Gluten, melk, nøtter, sulfitt</div>
+          </div>
+          <br>
+          <div id="lycheburger" onmouseover=display_content("lycheburgerinfo") onmouseout=hide_content("lycheburgerinfo")>LYCHEBURGER 109,-/129,- DOBBEL 139,-/159,-
+            <div id="lycheburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, bacon, pistou og ovnsbakte poteter.
+            Inneholder: Egg, gluten, melk, selleri, sennep, sulfitt</div>
+          </div>
+          <br>
+          <div id="blaburger" onmouseover=display_content("blaburgerinfo") onmouseout=hide_content("blaburgerinfo")>BLÅMUGGBURGER 109,-/129,- DOBBEL 139,-/159,-
+            <div id="blaburgerinfo">Serveres med aioli, cherrytomater, salat, blåmuggost fra Selbu, søt og syrlig valnøttsaus, pistou og ovnsbakte poteter.
+            Inneholder: Egg, gluten, melk, nøtter, selleri, sennep, sulfitt</div>
+          </div>
+          <br>
+          <div id="gburger" onmouseover=display_content("gburgerinfo") onmouseout=hide_content("gburgerinfo")>GULROTBURGER 85,-/105,- _**DOBBEL 105,-/125,-
+            <div id="gburgerinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, pistou og ovnsbakte poteter. Vegetar, kan fåes vegan.
+            Inneholder: Gluten, selleri, melk, sennep, sulfitt</div>
+          </div>
+          <br>
+        </div>
+
+        <div id="dessert">
+          <h2>DESSERT</h2>
+
+          <div id="is" onmouseover=display_content("isinfo") onmouseout=hide_content("isinfo")>IS 35,-/45,-
+            <div id="isinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
+          <br>
+          <div id="crema" onmouseover=display_content("cremainfo") onmouseout=hide_content("cremainfo")>CREMA CATALANA 49,-/69,-
+            <div id="cremainfo">Fløtebasert dessert med kanel og appelsin. Serveres med glasert appensinskive
+            Inneholder: Egg, melk</div>
+          </div>
+          <br>
+          <div id="trippel" onmouseover=display_content("trippelinfo") onmouseout=hide_content("trippelinfo")>TRIPPELMOUSSE 49,-/69,-
+            <div id="trippelinfo">Solbærmousse, melkesjokolademousse og mørk sjokolademousse. Serveres med nøtter, solbærcoulis og stekt hvit sjokolade.
+            Inneholder: Egg, melk, nøtter</div>
+          </div>
+        </div>
+        <br>
+        <div id="barnemeny">
+          <h2>BARNEMENY</h2>
+
+          <div id="barnesuppe" onmouseover=display_content("barnesuppeinfo") onmouseout=hide_content("barnesuppeinfo")>LITEN SUPPE 44,-
+            <div id="barnesuppeinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
+            Inneholder: Spør servitøren</div>
+          </div>
+
+          <div id="andeplser" onmouseover=display_content("andeplserinfo") onmouseout=hide_content("andeplserinfo")>ANDEPØLSER 85,-
+            <div id="andeplserinfo">Med timian og hvitløk. Serveres med ovnsstekte poteter og surkålmajones.
+            Inneholder: Egg, sennep, sulfitt</div>
+          </div>
+
+          <div id="reinsdyrbarn" onmouseover=display_content("reinsdyrbarninfo") onmouseout=hide_content("reinsdyrbarninfo")>REINSDYR 105,-
+            <div id="rainsdyrbarninfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
+            Inneholder: Melk, selleri, sulfitt</div>
+          </div>
+
+          <div id="klippfiskbarn" onmouseover=display_content("klippfiskbarninfo") onmouseout=hide_content("klippfiskbarninfo")>KLIPPFISK 85,-
+            <div id="klippfiskbarninfo">Serveres med Karamellisert sjalottløk, rødbetepuré, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
+            Inneholder: Fisk, melk, selleri, sulfitt</div>
+          </div>
+
+          <div id="barneis" onmouseover=display_content("barneisinfo") onmouseout=hide_content("barneisinfo")>IS 25,-
+            <div id="barneisinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
+            Inneholder: Spør en av våre servitører</div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+    <section id ="reservasjon">
+      <form id="reservasjon" action="samfundet_server">
+        <h1>Bordreservasjon</h1>
+        <p id=res_ant_pers>
+          Antall personer:  <input type="number" name="antPers"><br>
+          <p>Mer enn 12 personer? Send oss en <a href="mailto:lyche@samfundet.no"           target="_top">mail</a>.
+          </p>
+	      </p>
+
+        Starttidspunkt: <input type="datetime-local" name="starttidspunkt"     max="today" placeholder='20/10/2016 12:00'>
+
+        <p id=res_varighet>
+          Varighet:
+            <select name="varighet_min">
+              <option value="30">30 minutter</option>
+              <option value="60">60 minutter</option>
+              <option value="90">90 minutter</option>
+              <option value="120">120 minutter</option>
+            </select>
+        </p>
+
+        <p id="res_navn">
+          Navn: <input type="text" name="res_navn" placeholder="Navn Navnesen">
+        </p>
+
+        <p id='res_formaal'>
+          Hva er formålet med besøket? Vi bruker dette for å finne det best egnede bordet. <br>
+          Anledning:
+          <select>
+            <option value="Mat">Mat</option>
+            <option value="Drikke">Drikke</option>
+          </select>
+        </p>
+
+        Telefonnummer: <input type="text" name="res_telefonnummer">
+
+        <br>
+         Epost: <input type="email" name="res_epost">
+        <br>
+         Allergier: <input type="text" name="res_allergier">
+
+        <p id="res_send">
+          <input type="submit" value="Opprett reservasjon">
+        </p>
+      </form>
+    </section>
+
+
+    <section id = "galleri">
+    	<div id="mainImgWrap">
+		<img src="gallery_bilder/digeø0616.jpg" id="mainImg">
+			<span id="right" onclick="changeIndex(+1, 0)"> > </span>
+			<span id="left" onclick="changeIndex(-1, 0)"> < </span>
+		</div>
+		<br>
+		<div id="galImg" onclick="changeSwap(event)">
+			<img src="gallery_bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)">
+			<img src="gallery_bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)">
+			<img src="gallery_bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)">
+			<img src="gallery_bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)">
+			<br>
+			<img src="gallery_bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)">
+			<img src="gallery_bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)">
+			<img src="gallery_bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
+			<img src="gallery_bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
+			<img src="gallery_bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
+		</div>
+    </section>
+
+    <section id ="map">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+      <div style='overflow:hidden;height:400px;width:400px;'>
+        <div id='gmap_canvas' style='height:400px;width:400px;'></div>
+        <div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+        <div><small><a href="https://privacypolicygenerator.info">privacy policy example</a></small></div>
+        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+        <script type='text/javascript'>function init_map(){
+          var myOptions = {zoom:13,center:new google.maps.LatLng(63.423683110023944,10.395386927874135),mapTypeId: google.maps.MapTypeId.ROADMAP};
+          map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({
+            map: map,position: new google.maps.LatLng(63.423683110023944,10.395386927874135)});
+            infowindow = new google.maps.InfoWindow({content:'<strong>Lyche Bar og Resturante</strong><br>Elgesetergate 1, 7030 Trondheim<br>'});
+            google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+            google.maps.event.addDomListener(window, 'load', init_map);</script>
+      <!--this code is created by a generator, at https://embedgooglemaps.com/en/-->
+    </section>
+
+		<footer id="footer">
+			<p div id="footer_p">Epost: lyche@samfundet.no</p>
+			<ul div id="footer_list">
+				<li>Åpningstider:<li>
+				<li>Mandag-Torsdag: 16:00-23:30<li>
+				<li>Fredag-Lørdag: 16:00-02:00<li>
+				<li>Søndag: 16:00-22:00<li>
+			</ul>
+		</footer>
+      </div>
+	<script src="JavaScript_en_ing.js"></script>
+  </body>
+</html>
