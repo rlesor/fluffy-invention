@@ -18,29 +18,32 @@ section {
 
 }
 
-
+/* The wrapper is positioned relative an have a width of 100%  */
 #wrapper {
   position: relative;
   width: 100%;
 
 }
+/* Sets a size to all p elements */
 p {
  font-size: 1.1em;
  font-family: Georgia;
 color: #262626;
 }
+/* Sets a size to all h1 elements */
 h1 {
   font-family: "Luciida Calligraphy", Georgia, serif;
   font-size: 2.5em;
   color: #262626;
 
 }
-
+/* Sets a size to all h2 elements */
 h2 {
   font-family: "Luciida Calligraphy", Georgia, serif;
   font-size: 1.6em;
   color: #262626;
 }
+/* Makes a horizontal line below the h1 elements  */
 h1:after
 {
     content:' ';
