@@ -35,7 +35,7 @@
     float: left;
 }
 
-#navigation_bar ul li a, .menu_button {
+ul li a, .menu_button {
     display: inline-block;
     color: #4d3a32;
     padding: 14px 16px;
