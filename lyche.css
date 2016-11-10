@@ -8,7 +8,7 @@ body, html {
 }
 
 section {
-  min-height: 100vh;
+  height: auto;
   margin: 40px auto;
   font-size: 1.1em;
   color: #262626;
