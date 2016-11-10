@@ -1,3 +1,4 @@
+/* Sets a size and magin to the body. Sets a font-family that replies to all and a background color */
 
 body, html {
   height:  100%;
@@ -12,15 +13,11 @@ section {
   margin: 50px auto;
   font-size: 1.1em;
   color: #262626;
-
-}
-#omoss, #meny, #galleri, #bordreservasjon, #map{
   max-width: 600px;
-  /*border-left: 2px dotted #dbc3a3;
-  border-right: 2px dotted #dbc3a3; */
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+
 }
 
 
