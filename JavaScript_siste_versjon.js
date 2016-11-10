@@ -77,21 +77,21 @@ function display_hide(id){
 // Slideshow:
 
 let slideIndexSlideshow = 0;
-Slidesshow();
+Slidesshow(); 
 
-function Slidesshow() {
+function Slidesshow() { // Defines the function Slideshow
     let i;
-    const pictures = document.getElementsByClassName("slides");
-    const dots = document.getElementsByClassName("dot");
-    for (i = 0; i < pictures.length; i++) {
-       pictures[i].style.display = "none";
+    const pictures = document.getElementsByClassName("slides"); // Finds the pictures to include in the slideshow from the HTML-document
+    const dots = document.getElementsByClassName("dot"); // Finds the dots from the HTML-document
+    for (i = 0; i < pictures.length; i++) { 
+       pictures[i].style.display = "none"; // Sets the display attribute of the pictures to "none"
     }
-    slideIndexSlideshow++;
-    if (slideIndexSlideshow > pictures.length) {slideIndexSlideshow = 1}
+    slideIndexSlideshow++; 
+    if (slideIndexSlideshow > pictures.length) {slideIndexSlideshow = 1} // If the slideIndexSlideshow is larger than the amount of pictures, slideIndexSlideshow is set back to 1
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", ""); // Iterates through the dots and replaces the class with "active"
     }
-    pictures[slideIndexSlideshow-1].style.display = "block";
+    pictures[slideIndexSlideshow-1].style.display = "block"; // Sets the picture with index=slideIndexSlideshow-1 to display = "block"
     dots[slideIndexSlideshow-1].className += " active";
     setTimeout(Slidesshow, 4000); // Change image every 4 seconds
 }
