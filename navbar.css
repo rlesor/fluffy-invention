@@ -1,5 +1,7 @@
 #navigation_bar {
   background-color: rgba(171,130,111,0.96);
+  font-family: Georgia;
+  font-size: 1.1em;
   position: absolute;
   top: 0;
   left: 0;
