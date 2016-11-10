@@ -1,5 +1,7 @@
 #crew {
-  max-width: 500px;
-  display: block;
-  margin: auto;
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
 }
