@@ -8,5 +8,8 @@
 .foodinfo.active {          
     max-height: 100px;      /* Makes a smooth transition when the info div shows. */
     pointer-events: none; /* If the mouse hovers over the child div (info), then the "mouseout" event wont do anything so the info content can still show.*/ 
-    background-color: #D2B48C;  /* Changes the background color to invisible */
+    background-color: #D2B48C;  /* Changes the background color */
+}
+.food_div:hover {       /* Makes the text bold when hovered */
+  font-weight: bold;   
 }
