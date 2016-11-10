@@ -71,8 +71,8 @@
     </div>
 
 	<!-- About Lyce-->
-    <section id = "omoss">
-      <h1>Om oss</h1>
+    <section id = "s_omoss" class="infoseksjon">
+    <div id="omoss">
 			<h2>Lyche Kjøkken og Bar</h2>
 				<p>Bar, kjøkken, vin, mat, behagelig atmosfære, spennende, unikt. På Lyche vil alle kunne finne sin favorittplass uansett om man er
 				mange eller få, skal spise eller drikke, er på date eller for å møte venner. Både på en rolig tirsdag eller festfylt lørdag. Hele uka
@@ -82,10 +82,13 @@
 				det ikke noen aldersgrense i restauranten.</p>
 			<!--<img id="crew" src="bilder/digfk2033.jpg" alt="Frivillige i Lyche"> -->
       				<figcaption>foto: foto.samfundet.no</figcaption>
-    </section>
+	    <br><br>
+	    </div>
+	    </section>
 
 <!-- The menu at Lyche-->
-    <section id="meny">
+    <section id="s_meny">
+        <div id="meny">
         <h1>Meny</h1>
 
         <div id ="smaretter">
@@ -206,10 +209,10 @@
           </div>
 
         </div>
-
+	    </div>
       </section>
 
-<section id ="bordreservasjon" class="infoseksjon"> <!--registrate table reservation-->
+<section id ="bordreservasjon"> <!--registrate table reservation-->
       <form id="reservasjon" action="" onsubmit="alert('Bordreservasjonen er sendt inn')"> <!-- We do not have a server to put the form data in, therefore action="". However, to give the user the impression that we do, we alert the user if they submit the form anyway. -->
 
         <h1>Bordreservasjon</h1>
@@ -260,7 +263,8 @@
 
 
 
-    <section id = "galleri">
+   <section id = "s_galleri">
+    <div id="galleri">
 	<h1>Bildegalleri</h1>
     	<div id="mainImgWrap">            <!--A wrapper with the main image of the gallery, and its buttons-->
 		<img src="bilder/digeø0616.jpg" id="mainImg">  <!--Adds main image and sets default source -->
@@ -283,9 +287,12 @@
 			<img src="bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
 		<figcaption>foto: foto.samfundet.no</figcaption> <!-- Declares copyright  -->
 		</div>
+	    <br>
+	   </div>
     </section>
 
-    <section id ="map">
+    <section id ="s_map">
+	    <div id="map">
 	    <h1>Her holder vi til:</h1>
 	    <p>Elgesetergate 1, 7030 Trondheim</p>
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
@@ -302,7 +309,8 @@
             google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
             google.maps.event.addDomListener(window, 'load', init_map);</script>
       <!--this code is created by a generator, at https://embedgooglemaps.com/en/-->
-    </section>
+	    </div>
+	</section>
 	    
 	<footer id="footer">
 		<p>Epost: <a href="mailto:lyche@samfundet.no" target="_top">lyche@samfundet.no</a></p>
