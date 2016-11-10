@@ -1,14 +1,18 @@
+/* Sets a size to the header so the "Lyche logo" is in the middle */
+
 header {
     width: 100%;
     text-align: center;
     margin: 2% 0;
 }
 
+/* Sets a size and margin to the logo */
+
 #logo {
   width: 20%;
     min-width: 150px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 10px;
 
 }
 
