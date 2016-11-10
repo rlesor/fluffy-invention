@@ -27,3 +27,8 @@ input, select, button
     font-weight: bold;
 }
 
+#reservasjon select {
+	width: 150px;
+}
+
+
