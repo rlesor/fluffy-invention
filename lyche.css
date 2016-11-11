@@ -29,8 +29,8 @@ body, html {
   width: 100%;
 
 }
-/* Sets a size to all p elements */
-p {
+/* Sets a size to all p, input and select elements */
+p, input, select {
  font-size: 1.1em;
  font-family: Georgia;
 color: #262626;
