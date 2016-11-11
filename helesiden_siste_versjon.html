@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
   <head>
 <!-- WRITTEN BY: Sigurd Nybakk, Oda Aasen, Tord Standnes, Erle Seljelid Sørlie og Lena Tørresdal WHEN: October/November 2016 PURPOSE: share information about the restaurante Lyche -->	
     <meta charset="utf-8">
@@ -37,12 +37,12 @@
                 <a href="#hovedretter">Hovedretter</a>
                 <a href="#barnemeny">Barnemeny</a>
                 <a href="#dessert">Dessert</a>
-              </div>
+              </div> 
+            </li>
             <li><a href="#reservasjon">Reservasjon</a></li>
             <li><a href="#galleri">Bildegalleri</a></li>
             <li><a href="#footer">Åpningstider</a></li>
-            <li><a href="#footer">Kontakt oss</a></li>
-            </li>
+            <li><a href="#footer">Kontakt oss</a></li> 
          </ul>
         </div>
       </div>
@@ -82,9 +82,11 @@
 				og moderne på samme tid. På Lyche koser du deg hele uka igjennom.</p>
 				<p>På fredager og lørdag, fra 23:00 til 02:00, er det 20 års aldersgrense i Lyche grunnet mulighet til å kjøpe sprit i baren. Ellers er
 				det ikke noen aldersgrense i restauranten.</p>
-			<img id="crew" src="bilder/crew.jpg" alt="Frivillige i Lyche"> 
+			<figure>
+      <img id="crew" src="bilder/crew.jpg" alt="Frivillige i Lyche"> 
       				<figcaption>foto: foto.samfundet.no</figcaption>
-	    <br><br>
+	    </figure>
+      <br><br>
 	    </div>
 	    </section>
 
@@ -98,22 +100,22 @@
       <br><br>
           <h2>Småretter</h2>
 
-          <div id="kornbrd" class="food_div" onmouseenter=display_hide("kornbrdinfo") onmouseout=display_hide("kornbrdinfo")> Kornbrød 19,-/29,- <!-- Calls the function "display_hide" when the mouse touches the visible div, and then displays the info div-->
+          <div id="kornbrd" class="food_div" onmouseenter="display_hide('kornbrdinfo')" onmouseout="display_hide('kornbrdinfo')"> Kornbrød 19,-/29,- <!-- Calls the function "display_hide" when the mouse touches the visible div, and then displays the info div-->
             <div id="kornbrdinfo" class="foodinfo">Serveres med pisket Rørossmør.						<!-- When the mouse goes away, the function will be called again and hide the info div.-->
               Inneholder: Gluten, melk</div>											<!-- The same goes for all the other divs below.-->
           </div>
           <br>
-          <div id="sidesalat" class="food_div" onmouseover=display_hide("sidesalatinfo") onmouseout=display_hide("sidesalatinfo")>Sidesalat 19,-/29,-
+          <div id="sidesalat" class="food_div" onmouseover='display_hide("sidesalatinfo")' onmouseout='display_hide("sidesalatinfo")'>Sidesalat 19,-/29,-
             <div id="sidesalatinfo" class="foodinfo">Med cherrytomater og vinaigrette.
               Inneholder: Sulfitt</div>
           </div>
           <br>
-          <div id="blaskjell" class="food_div" onmouseover=display_hide("blaskjellinfo") onmouseout=display_hide("blaskjellinfo")>Hvitvinsdampede blåskjell 89,-/109,-
+          <div id="blaskjell" class="food_div" onmouseover='display_hide("blaskjellinfo")' onmouseout='display_hide("blaskjellinfo")'>Hvitvinsdampede blåskjell 89,-/109,-
             <div id="blaskjellinfo" class="foodinfo">Serveres med kornbrød og pisket Rørossmør.
               Inneholder: Bløtdyr, gluten, melk, sulfitt</div>
           </div>
           <br>
-          <div id="litensuppe" class="food_div" onmouseover=display_hide("litensuppeinfo") onmouseout=display_hide("litensuppeinfo")>Liten suppe 39,-/55,-
+          <div id="litensuppe" class="food_div" onmouseover='display_hide("litensuppeinfo")' onmouseout='display_hide("litensuppeinfo")'>Liten suppe 39,-/55,-
             <div id="litensuppeinfo" class="foodinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
             Inneholder: Spør servitøren</div>
           </div>
@@ -124,42 +126,42 @@
         <br> <br>
           <h2>Hovedretter</h2>
 
-          <div id="reinsdyr" class="food_div" onmouseover=display_hide("reinsdyrinfo") onmouseout=display_hide("reinsdyrinfo")>Reinsdyr 159,-/189,-
+          <div id="reinsdyr" class="food_div" onmouseover='display_hide("reinsdyrinfo")' onmouseout='display_hide("reinsdyrinfo")'>Reinsdyr 159,-/189,-
             <div id="reinsdyrinfo" class="foodinfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
             Inneholder: Melk, selleri, sulfitt</div>
           </div>
           <br>
-          <div id="klippfisk" class="food_div" onmouseover=display_hide("klippfiskinfo") onmouseout=display_hide("klippfiskinfo")>Klippfisk 119,-/145,-
+          <div id="klippfisk" class="food_div" onmouseover='display_hide("klippfiskinfo")' onmouseout='display_hide("klippfiskinfo")'>Klippfisk 119,-/145,-
             <div id="klippfiskinfo" class="foodinfo">Serveres med Karamellisert sjalottløk, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
             Inneholder: Fisk, melk, sennep</div>
           </div>
           <br>
-          <div id="bygotto" class="food_div" onmouseover=display_hide("bygottoinfo") onmouseout=display_hide("bygottoinfo")>Bygotto 109,-/129,-
+          <div id="bygotto" class="food_div" onmouseover='display_hide("bygottoinfo")' onmouseout='display_hide("bygottoinfo")'>Bygotto 109,-/129,-
             <div id="bygottoinfo" class="foodinfo">Byggrynsrisotto med løk, purre, gulrot og sopp. Serveres med chioggiabeter. Vegetar.
             Inneholder: Gluten, melk, soya, sulfitt</div>
           </div>
           <br>
-          <div id="suppe" class="food_div" onmouseover=display_hide("suppeinfo") onmouseout=display_hide"suppeinfo")>Suppe 69,-/89,-
+          <div id="suppe" class="food_div" onmouseover='display_hide("suppeinfo")' onmouseout='display_hide("suppeinfo")'>Suppe 69,-/89,-
             <div id="suppeinfo" class="foodinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
             Inneholder: Spør en av våre servitører</div>
           </div>
           <br>
-          <div id="lychesalat" class="food_div" onmouseover=display_hide("lychesalatinfo") onmouseout=display_hide("lychesalatinfo")>Lychesalat 79,-/99,-
+          <div id="lychesalat" class="food_div" onmouseover='display_hide("lychesalatinfo")' onmouseout='display_hide("lychesalatinfo")'>Lychesalat 79,-/99,-
             <div id="lychesalatinfo" class="foodinfo">Med søt og syrlig valnøttsaus, quinoa, pinjekjerner, chevre fra Haukeli og Santa Kristina-skinke. Serveres med kornbrød og pisket Rørossmør.
             Inneholder: Gluten, melk, nøtter, sulfitt</div>
           </div>
           <br>
-          <div id="lycheburger" class="food_div" onmouseover=display_hide("lycheburgerinfo") onmouseout=display_hide("lycheburgerinfo")>Lycheburger 109,-/129,- Dobbel 139,-/159,-
+          <div id="lycheburger" class="food_div" onmouseover='display_hide("lycheburgerinfo")' onmouseout='display_hide("lycheburgerinfo")'>Lycheburger 109,-/129,- Dobbel 139,-/159,-
             <div id="lycheburgerinfo" class="foodinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, bacon, pistou og ovnsbakte poteter.
             Inneholder: Egg, gluten, melk, selleri, sennep, sulfitt</div>
           </div>
           <br>
-          <div id="blaburger" class="food_div" onmouseover=display_hide("blaburgerinfo") onmouseout=display_hide("blaburgerinfo")>Blåmuggburger 109,-/129,- Dobbel 139,-/159,-
+          <div id="blaburger" class="food_div" onmouseover='display_hide("blaburgerinfo")' onmouseout='display_hide("blaburgerinfo")'>Blåmuggburger 109,-/129,- Dobbel 139,-/159,-
             <div id="blaburgerinfo" class="foodinfo">Serveres med aioli, cherrytomater, salat, blåmuggost fra Selbu, søt og syrlig valnøttsaus, pistou og ovnsbakte poteter.
             Inneholder: Egg, gluten, melk, nøtter, selleri, sennep, sulfitt</div>
           </div>
           <br>
-          <div id="gburger" class="food_div" onmouseover=display_hide("gburgerinfo") onmouseout=display_hide("gburgerinfo")>Gulrotburger 85,-/105,- _**Dobbel 105,-/125,-
+          <div id="gburger" class="food_div" onmouseover='display_hide("gburgerinfo")' onmouseout='display_hide("gburgerinfo")'>Gulrotburger 85,-/105,- _**Dobbel 105,-/125,-
             <div id="gburgerinfo" class="foodinfo">Serveres med aioli, cherrytomater, salat, paprikasalsa, ost, pistou og ovnsbakte poteter. Vegetar, kan fåes vegan.
             Inneholder: Gluten, selleri, melk, sennep, sulfitt</div>
           </div>
@@ -169,27 +171,27 @@
         <br><br>
           <h2>Barnemeny</h2>
 
-          <div id="barnesuppe" class="food_div" onmouseover=display_hide("barnesuppeinfo") onmouseout=display_hide("barnesuppeinfo")>Liten suppe 44,-
+          <div id="barnesuppe" class="food_div" onmouseover='display_hide("barnesuppeinfo")' onmouseout='display_hide("barnesuppeinfo")'>Liten suppe 44,-
             <div id="barnesuppeinfo" class="foodinfo">Varierer etter sesong. Spør en av våre servitører om dagens suppe.
             Inneholder: Spør servitøren</div>
           </div>
           <br>
-          <div id="andeplser" class="food_div" onmouseover=display_hide("andeplserinfo") onmouseout=display_hide("andeplserinfo")>Andepølser 85,-
+          <div id="andeplser" class="food_div" onmouseover='display_hide("andeplserinfo")' onmouseout='display_hide("andeplserinfo")'>Andepølser 85,-
             <div id="andeplserinfo" class="foodinfo">Med timian og hvitløk. Serveres med ovnsstekte poteter og surkålmajones.
             Inneholder: Egg, sennep, sulfitt</div>
           </div>
           <br>
-          <div id="reinsdyrbarn" class="food_div" onmouseover=display_hide("rainsdyrbarninfo") onmouseout=display_hide("rainsdyrbarninfo")>Reinsdyr 105,-
+          <div id="reinsdyrbarn" class="food_div" onmouseover='display_hide("rainsdyrbarninfo")' onmouseout='display_hide("rainsdyrbarninfo")'>Reinsdyr 105,-
             <div id="rainsdyrbarninfo" class="foodinfo">Flatbiff av reinsdyr. Serveres med rødbetepuré, brekkbønner, sopp, blåbærsaus og ovnsstekte poteter.
             Inneholder: Melk, selleri, sulfitt</div>
           </div>
           <br>
-          <div id="klippfiskbarn" class="food_div" onmouseover=display_hide("klippfiskbarninfo") onmouseout=display_hide("klippfiskbarninfo")>Klippfisk 85,-
+          <div id="klippfiskbarn" class="food_div" onmouseover='display_hide("klippfiskbarninfo")' onmouseout='display_hide("klippfiskbarninfo")'>Klippfisk 85,-
             <div id="klippfiskbarninfo" class="foodinfo">Serveres med Karamellisert sjalottløk, rødbetepuré, brekkbønner, souce vierge, spekeskinkechips og ovnsstekte poteter.
             Inneholder: Fisk, melk, selleri, sulfitt</div>
           </div>
           <br>
-          <div id="barneis" class="food_div" onmouseover=display_hide("barneisinfo") onmouseout=display_hide("barneisinfo")>Is 25,-
+          <div id="barneis" class="food_div" onmouseover='display_hide("barneisinfo")' onmouseout='display_hide("barneisinfo")'>Is 25,-
             <div id="barneisinfo" class="foodinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
             Inneholder: Spør en av våre servitører</div>
           </div>
@@ -200,17 +202,17 @@
         <br><br>
           <h2>Dessert</h2>
 
-          <div id="is" class="food_div" onmouseover=display_hide("isinfo") onmouseout=display_hide("isinfo")>Is 35,-/45,-
+          <div id="is" class="food_div" onmouseover='display_hide("isinfo")' onmouseout='display_hide("isinfo")'>Is 35,-/45,-
             <div id="isinfo" class="foodinfo">Iskrem og/eller sorbet. Spør en av våre servitører om dagens smaker.
             Inneholder: Spør en av våre servitører</div>
           </div>
           <br>
-          <div id="crema" class="food_div" onmouseover=display_hide("cremainfo") onmouseout=display_hide("cremainfo")>Crema catalana 49,-/69,-
+          <div id="crema" class="food_div" onmouseover='display_hide("cremainfo")' onmouseout='display_hide("cremainfo")'>Crema catalana 49,-/69,-
             <div id="cremainfo" class="foodinfo">Fløtebasert dessert med kanel og appelsin. Serveres med glasert appensinskive.
             Inneholder: Egg, melk</div>
           </div>
           <br>
-          <div id="trippel" class="food_div" onmouseover=display_hide("trippelinfo") onmouseout=display_hide("trippelinfo")>Trippelmousse 49,-/69,-
+          <div id="trippel" class="food_div" onmouseover='display_hide("trippelinfo")' onmouseout='display_hide("trippelinfo")'>Trippelmousse 49,-/69,-
             <div id="trippelinfo" class="foodinfo">Solbærmousse, melkesjokolademousse og mørk sjokolademousse. Serveres med nøtter, solbærcoulis og stekt hvit sjokolade.
             Inneholder: Egg, melk, nøtter</div>
           </div>
@@ -223,14 +225,14 @@
       </section>
 
 <section id ="bordreservasjon"> <!--registrate table reservation-->
-      <form id="reservasjon" action="" onsubmit="alert('Bordreservasjonen er sendt inn')"> <!-- We do not have a server to put the form data in, therefore action="". However, to give the user the impression that we do, we alert the user if they submit the form anyway. -->
+      <form id="reservasjon" action="none" onsubmit="alert('Bordreservasjonen er sendt inn')"> <!-- We do not have a server to put the form data in, therefore action="". However, to give the user the impression that we do, we alert the user if they submit the form anyway. -->
 <br>
         <h1>Bordreservasjon</h1>
         <p>
           Antall personer:  <input type="number" id="antPers" required><br> <!--I used the required tag a lot to make sure the Lyche would get all the neccesary information for a reservation. We thought it was a better soluton to use the already implemented required tag than to create a new function in js to do the exact same thing. --> 
-          <p>Mer enn 12 personer? Send oss en <a href="mailto:lyche@samfundet.no" target="_top">mail</a>.
-          </p>
-	      </p>
+        </p>
+        <p>Mer enn 12 personer? Send oss en <a href="mailto:lyche@samfundet.no" target="_top">mail</a>.
+        </p>
 	<p>
         Starttidspunkt: <input type="datetime-local" id="starttidspunkt" min="today" required>
 	</p>
