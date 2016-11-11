@@ -1,6 +1,7 @@
-/* All element that is not specified should have this font-family */
+/* All element that is not specified should have this font-family and color */
 * {
   font-family: Georgia;
+  color: #262626;
 }
 
 /* Sets a size and magin to the body. Sets a font-family that replies to all and a background color */
