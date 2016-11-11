@@ -13,3 +13,7 @@
 .food_div:hover {       /* Makes the text bold when hovered */
   font-weight: bold;   
 }
+/* Sets a size to the p element inside the s_menu section */
+#s_meny p {
+  font-size: 0.8em;
+}
