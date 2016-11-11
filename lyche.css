@@ -7,8 +7,8 @@ body, html {
 
 }
 
-/* Sets a size to all sections and sets a font-size and  */
-section {
+/* Sets a size to all divs within sections ++  */
+#omoss, #meny, #map, #galleri, #bordreservasjon {
   height: auto;
   margin: 50px auto;
   max-width: 600px;
