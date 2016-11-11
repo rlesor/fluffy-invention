@@ -279,7 +279,7 @@
 	    <br>
 	<h1>Bildegalleri</h1>
     	<div id="mainImgWrap">            <!--A wrapper with the main image of the gallery, and its buttons-->
-		<img src="bilder/digeø0616.jpg" id="mainImg">  <!--Adds main image and sets default source -->
+		<img src="bilder/digeø0616.jpg" id="mainImg" alt="Innsiden av restauranten">  <!--Adds main image and sets default source -->
 			<span id="right" onclick="changeIndex(+1, 0)"> &#10095; </span>  <!-- Upon click sends (+1) to "changeIndex" -->
 			<span id="left" onclick="changeIndex(-1, 0)"> &#10094; </span>   <!-- Sends (-1) to same funtion. see JS file -->
 	</div>
@@ -287,16 +287,16 @@
 		<div id="galImg" onclick="changeSwap(event)"> <!-- Adds a div, with all preview images -->
 			<!--Adds preview images. Adds a class for styling, an id for JS and connects it to the function "changeIndex"  -->
 			<!--onclick. See JS file  -->
-			<img src="bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)"> 
-			<img src="bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)">
-			<img src="bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)">
-			<img src="bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)">
+			<img src="bilder/digeø0616.jpg" class="galleryImg" id="bilde1" onclick="changeIndex(0, 1)" alt="Innsiden av restauranten"> 
+			<img src="bilder/digfd1906.jpg" class="galleryImg" id="bilde2" onclick="changeIndex(0, 2)" alt="Innsiden av restauranten">
+			<img src="bilder/digfd1927.jpg" class="galleryImg" id="bilde3" onclick="changeIndex(0, 3)" alt="Innsiden av restauranten">
+			<img src="bilder/digfd2124.jpg" class="galleryImg" id="bilde4" onclick="changeIndex(0, 4)" alt="Inngangsparti">
 			<br>
-			<img src="bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)">
-			<img src="bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)">
-			<img src="bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)">
-			<img src="bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)">
-			<img src="bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)">
+			<img src="bilder/digfd2218.jpg" class="galleryImg" id="bilde5" onclick="changeIndex(0, 5)" alt="Inngangsparti">
+			<img src="bilder/digfe2009.jpg" class="galleryImg" id="bilde6" onclick="changeIndex(0, 6)" alt="Bardisk">
+			<img src="bilder/digfl1350.jpg" class="galleryImg" id="bilde7" onclick="changeIndex(0, 7)" alt="Mat på vei ut i restauranten">
+			<img src="bilder/digfl1351.jpg" class="galleryImg" id="bilde8" onclick="changeIndex(0, 8)" alt="Baren">
+			<img src="bilder/digfl2016.jpg" class="galleryImg" id="bilde9" onclick="changeIndex(0, 9)" alt="En kokk i arbeid">
 		<figcaption>foto: foto.samfundet.no</figcaption> <!-- Declares copyright  -->
 		</div>
 	    <br>
