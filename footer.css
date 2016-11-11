@@ -1,3 +1,4 @@
+
 #footer{
 	color: #4d3a32;
 }
@@ -6,10 +7,15 @@
   color: #4d3a32;
 }
 #footer p{
-	float:right;
-	margin-right:5%;
+
 
 }
 a {
   color: black;
+}
+
+#contact {
+	margin: 10px;
+	float:right;
+	margin-right:5%;
 }
