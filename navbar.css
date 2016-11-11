@@ -1,30 +1,30 @@
-#navigation_bar {
-  background-color: rgba(171,130,111,0.96);
-  font-family: Georgia;
-  font-size: 1.1em;
-  position: absolute;
-  top: 0;
+#navigation_bar { /*styles the nav bar*/
+  background-color: rgba(171,130,111,0.96); /*sets background color and transparansy*/
+  font-family: Georgia;  /*text type*/
+  font-size: 1.1em; /*text size*/
+  position: absolute;  /*places the nav bar relative to the wrapper*/
+  top: 0; /*places the nav bar at the top of the wrapper*/
   left: 0;
   right: 0;
-  z-index: 4;   
+  z-index: 4; /*places the nav bar first*/   
   
 }
-#nav_bar_div {
+#nav_bar_div { /*changes the div element with the nav bar*/
   width: auto;
-  height: 46px; 
+  height: 46px; /*sets the height to the height to one line of the nav_bar*/
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767px){ /*changes the div element with the nav bar*/
   #nav_bar_div {
-    height: 92px;
+    height: 92px; /*sets the height to the height to two lines of the nav_bar*/
   }
 }
-@media screen and (max-width:422px){
+@media screen and (max-width:422px){ /*changes the div element with the nav bar*/
   #nav_bar_div {
-    height: 138px;
+    height: 138px; /*sets the height to the height to three lines of the nav_bar*/
   }
 }
 
-#navigation_bar ul {
+#navigation_bar ul { /*styles the list element*/
     list-style-type: none;
     background-color:transparent;
     margin: 0 auto;
@@ -34,7 +34,7 @@
 }
 
 #navigation_bar ul li {
-    float: left;
+    float: left; /*makes the list horisontal*/
 }
 
 ul li a, .menu_button {
