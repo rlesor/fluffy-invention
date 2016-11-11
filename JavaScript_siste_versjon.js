@@ -4,26 +4,26 @@
 //aswell as the mouse cursor, on a gallery underneath.
 
 let slideIndex_gallery = 1;              //The slideIndex decides which image that is shown as the main image
-function changeIndex(n, n2){	 //the parameter n is +1 (clicking right button) or -1 (left button) n2 is the slideIndex. See HTML.
+function changeIndex(n, n2) {	 //the parameter n is +1 (clicking right button) or -1 (left button) n2 is the slideIndex. See HTML.
 	slideIndex_gallery += n;
-	if(slideIndex_gallery > 9){    	  //If slideIndex is larger than 9 (bilde9) the main image should be set to the first in the gallery
+	if(slideIndex_gallery > 9) {    	  //If slideIndex is larger than 9 (bilde9) the main image should be set to the first in the gallery
 		slideIndex_gallery = 1 ;  //(bilde1) upon clicking the right button (slideIndex + 1)
 	}
-	if(slideIndex_gallery < 1){     //The same as above, only that bilde1 (the first image) becomes bilde9 (the last image)
+	if(slideIndex_gallery < 1) {     //The same as above, only that bilde1 (the first image) becomes bilde9 (the last image)
 		slideIndex_gallery = 9; //upon clicking the left button (-1)
 	}
 		
-	if(n2 != 0){			 //When clicking the right and left buttons, n2 = 0 is sent to this function. However, if one
+	if(n2 !== 0){			 //When clicking the right and left buttons, n2 = 0 is sent to this function. However, if one
 		slideIndex_gallery = n2; //clickes an image in the gallery it will. n2 has the value of the new slideIndex.
 	}
 		
-	changeClick(slideIndex_gallery) //the slideIndex is sent into the changeClick function.
+	changeClick(slideIndex_gallery); //the slideIndex is sent into the changeClick function.
 	
 	
-function changeClick(n){   //Function that changes the source of the main image
+function changeClick(n) {   //Function that changes the source of the main image
 	let bildeId = "bilde"+n.toString();                   //bildeId becomes the id of the various images (bilde1, bilde2....bilde9)
 	let targetSrc = document.getElementById(bildeId);     //Retrieves the source of bildeId
-	document.getElementById("mainImg").src = targetSrc.getAttribute("src") //Changes the source of the main image to the source of
+	document.getElementById("mainImg").src = targetSrc.getAttribute("src"); //Changes the source of the main image to the source of
 }									       //bildeId
 }
 
@@ -55,7 +55,7 @@ window.onscroll = function nav_scroll() {                                //this 
   else{
     document.getElementById("navigation_bar").style.position = "absolute"; //places the nav bar under the logo/at the top of the wrapper.
   }
-}
+};
 
 //endringer:
 //endre position absolute fra fixed til absolute i css (#navigation_bar)
@@ -87,7 +87,7 @@ function Slidesshow() { // Defines the function Slideshow
        pictures[i].style.display = "none"; // Sets the display attribute of the pictures to "none"
     }
     slideIndexSlideshow++; 
-    if (slideIndexSlideshow > pictures.length) {slideIndexSlideshow = 1} // If the slideIndexSlideshow is larger than the amount of pictures, slideIndexSlideshow is set back to 1
+    if (slideIndexSlideshow > pictures.length) {slideIndexSlideshow = 1;} // If the slideIndexSlideshow is larger than the amount of pictures, slideIndexSlideshow is set back to 1
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", ""); // Iterates through the dots and replaces the class with "active"
     }
