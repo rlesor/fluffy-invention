@@ -5,9 +5,7 @@ input, select, button
     border-radius: 5px;
     size: 30px;
     margin: 10px;
-    font-size: large;
     padding: 5px;
-    font-family: georgia;
 }
 
 #reservasjon input {
