@@ -225,16 +225,18 @@
       </section>
 
 <section id ="bordreservasjon"> <!--registrate table reservation-->
-      <form id="reservasjon" action="none" onsubmit="alert('Bordreservasjonen er sendt inn')"> <!-- We do not have a server to put the form data in, therefore action="". However, to give the user the impression that we do, we alert the user if they submit the form anyway. -->
+
+    <h1>Bordreservasjon</h1>
+      <form id="reservasjon" onsubmit="alert('Bordreservasjonen er sendt inn')" method="get">  <!-- We do not have a server to put the form data in, therefore action="". However, to give the user the impression that we do, we alert the user if they submit the form anyway. -->
 <br>
-        <h1>Bordreservasjon</h1>
+
         <p>
-          Antall personer:  <input type="number" id="antPers" required min='1' max='12'><br> <!--I used the required tag a lot to make sure the Lyche would get all the neccesary information for a reservation. We thought it was a better soluton to use the already implemented required tag than to create a new function in js to do the exact same thing. --> 
+          Antall personer:  <input type="number" id="antPers" max ="12" min="1" required><br> <!--I used the required tag a lot to make sure the Lyche would get all the neccesary information for a reservation. We thought it was a better soluton to use the already implemented required tag than to create a new function in js to do the exact same thing. -->
         </p>
         <p>Mer enn 12 personer? Send oss en <a href="mailto:lyche@samfundet.no" target="_top">mail</a>.
         </p>
 	<p>
-        Starttidspunkt: <input type="datetime-local" id="starttidspunkt" required>
+        Starttidspunkt: <input type="datetime-local" id="starttidspunkt" min="today" max="2016-26-11T22:00:00" required>
 	</p>
         <p>
           Varighet:
@@ -252,15 +254,15 @@
         </p>
 
         <p>
-          Hva er formålet med besøket? Vi bruker dette for å finne det best egnede bordet. <br>
-          Anledning:
+          Hva er formålet med besøket? Vi bruker dette for å finne det best egnede bordet. <br><br>
+          Anledning:</p>
           <select id='res_formaal'>
             <option value="Mat">Mat</option>
             <option value="Drikke">Drikke</option>
           </select>
-        </p>
+
 	<p>
-        Telefonnummer: <input type="text" id="res_telefonnummer" required>
+        Telefonnummer: <input type="number" id="res_telefonnummer" maxlength="12" minlenght="8" required>
 
         <br>
          Epost: <input type="email" id="res_epost" required>
@@ -268,12 +270,11 @@
          Allergier: <input type="text" id="res_allergier"> <!-- This is not neccesary to know and is therefore not supplemented with the required tag.-->
 	</p>
         <p>
-          <input type="submit" value="Opprett reservasjon" id="res_send" >
+          <input type="submit" value="Opprett reservasjon" id="res_send" onclick="resetForm()">
         </p>
 	</form>
 	  <br><br>
     </section>
-
 
 
    <section id = "s_galleri">
