@@ -57,11 +57,6 @@ window.onscroll = function nav_scroll() {                                //this 
   }
 };
 
-//endringer:
-//endre position absolute fra fixed til absolute i css (#navigation_bar)
-//laget en ny div med id tag, og laget css til den
-//css må skrives slik at div skalerer med navbar
-
 //Menu - show more information:
 
 function display_hide(id){			
