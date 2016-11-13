@@ -1,5 +1,6 @@
 
 #footer{
+	background-color: #9E8263;
 	color: #4d3a32;
 }
 #footer_list li{
@@ -28,7 +29,6 @@ background color to be slightly darker than the footer*/
 width: 100%;
 height: 17px;
 text-align: center;
-background-color: rgba(0, 0, 0, 0.3);
 }
 /* Changes the font size of the copyright div */
 #copyright p {
