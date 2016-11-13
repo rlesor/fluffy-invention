@@ -1,0 +1,79 @@
+#navigation_bar { /*styles the nav bar*/
+  background-color: rgba(171,130,111,0.96); /*sets background color and transparansy*/
+  font-family: Georgia;  /*text type*/
+  font-size: 1.1em; /*text size*/
+  position: absolute;  /*places the nav bar relative to the wrapper*/
+  top: 0; /*places the nav bar at the top of the wrapper*/
+  left: 0;
+  right: 0;
+  z-index: 4; /*places the nav bar first*/   
+  
+}
+#nav_bar_div { /*changes the div element with the nav bar*/
+  width: auto;
+  height: 46px; /*sets the height to the height to one line of the nav_bar*/
+}
+@media screen and (max-width:707px){ /*changes the div element with the nav bar*/
+  #nav_bar_div {
+    height: 96px; /*sets the height to the height to two lines of the nav_bar*/
+  }
+}
+@media screen and (max-width:395px){ /*changes the div element with the nav bar*/
+  #nav_bar_div {
+    height: 144px; /*sets the height to the height to three lines of the nav_bar*/
+  }
+}
+
+#navigation_bar ul { /*styles the list element*/
+    list-style-type: none;
+    background-color:transparent;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    min-width: 312px;
+}
+
+#navigation_bar ul li {
+    float: left; /*makes the list horisontal*/
+}
+
+ul li a, .menu_button {
+    display: inline-block;
+    color: #4d3a32;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+#navigation_bar ul li a:hover, .dropdown:hover .menu_button {
+    background-color: #a36a58;
+    color: black;
+}
+
+#navigation_bar ul li.dropdown {
+    display: inline-block;
+}
+
+.menu_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(150,116,71,0.9);
+    min-width: 150px;
+    z-index: 5;
+}
+
+.menu_content a {
+    color: #4d3a32;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu_content a:hover {
+  background-color: #a37d4b;
+}
+
+.dropdown:hover .menu_content {
+    display: block;
+}

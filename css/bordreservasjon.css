@@ -1,0 +1,27 @@
+form {                      /* Set a style to the form*/
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+input {                         /*Set a style to the input field */
+    border: 1px solid black;       
+    background-color: : #e2cfb6;
+    width: 100%;
+
+}
+input[type=text], input[type=datetime-local], input[type=email], input[type=number], select { /* Set a style to the different input field and select field */
+    width: 100%;
+    background-color: #e2cfb6;
+    border: 2px solid #555;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input[type=submit] { /* Set a style to the sumbit button */
+  background-color: #826F55;
+  width: 250px;
+  font-weight: bold;
+}
+input[type=submit]:hover {   /* Set a style to the hover over sumbit button */
+    background-color: #936a39;
+}

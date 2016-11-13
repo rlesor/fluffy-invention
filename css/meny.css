@@ -1,0 +1,19 @@
+.foodinfo {
+    transition: max-height 1s;  /*Makes a smooth transition when the info div goes away */
+    max-height: 0;              /* Sets the maximum hight of the div to 0. */
+    overflow: hidden;           /* Makes the rest of the content invisible */
+    font-size: 0.8em;                   /* Sets the font size to the info div */
+
+}
+.foodinfo.active {          
+    max-height: 100px;      /* Makes a smooth transition when the info div shows. */
+    pointer-events: none; /* If the mouse hovers over the child div (info), then the "mouseout" event wont do anything so the info content can still show.*/ 
+    background-color: transparent;  /* Changes the background color */
+}
+.food_div:hover {       /* Makes the text bold when hovered */
+  font-weight: bold;   
+}
+/* Sets a size to the p element inside the s_menu section */
+#s_meny p {
+  font-size: 0.8em;
+}

@@ -1,0 +1,75 @@
+/* All element that is not specified should have this font-family and color */
+* {
+  font-family: Georgia;
+  color: #262626;
+}
+
+/* Sets a size and magin to the body. Sets a font-family that replies to all and a background color */
+
+body, html {
+  height:  100%;
+  margin:  0 auto;
+  background-color: #CFAA82;
+}
+
+/* Sets a size to all divs within sections ++  */
+#omoss, #meny, #map, #galleri, #bordreservasjon {
+  height: auto;
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+
+}
+
+/* The wrapper is positioned relative an have a width of 100%  */
+#wrapper {
+  position: relative;
+  width: 100%;
+
+}
+/* Sets a size to all p, input and select elements */
+p, input, select {
+ font-size: 1.1em;
+ font-family: Georgia;
+color: #262626;
+}
+/* Sets a size to all h1 elements */
+h1 {
+  font-family: "Lucida Calligraphy", Georgia, serif;
+  font-size: 2.5em;
+  color: #262626;
+
+}
+/* Sets a size to all h2 elements */
+h2 {
+  font-family: "Lucida Calligraphy", Georgia, serif;
+  font-size: 1.6em;
+  color: #262626;
+}
+/* Makes a horizontal line below the h1 elements  */
+h1:after
+{
+    content:' ';
+    display:block;
+    border:1px solid #262626;
+}
+
+#s_omoss {
+  background-color: #CFAA82;
+}
+#slideshow {
+  background-color: #CFAA82;
+}
+#s_meny {
+  background-color: #9E8263;
+}
+#bordreservasjon {
+  background-color: #CFAA82;
+}
+#s_galleri {
+  background-color: #9E8263;
+}
+#s_map {
+  background-color: #CFAA82;
+}

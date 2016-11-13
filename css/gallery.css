@@ -1,0 +1,55 @@
+#mainImgWrap{                         /*This wrap is designed so that the main image of the gallery and its buttons is in the same div */
+	position:relative;
+	height:450px;
+	width:100%;
+	}
+#left, #right{                /*The left and right buttons are positioned on the mainImgWrap */
+	position:absolute;                     
+	top:45%;
+	z-index:1;            /*The x-index is set to the value of 1, so that the buttons will be infront of the mainImg*/
+	padding:8px;
+	opacity:0.7;	      /*Makes the buttons a little see-through*/
+	background-color:white;
+	font-size:0.5em;
+	}
+
+#right{
+	right:5px;
+	}
+
+#left{
+	left:5px;
+	}
+
+#left:hover, #right:hover{     /*Will make it obvious for users that buttons are clickable by changing the cursor to a pointer whilst*/
+	cursor:pointer;        /*it hovers over the buttons.*/
+	}
+
+#mainImg{			/*Seting mainImgs apperance*/
+	height:100%;
+	width:100%;
+	max-width:100%
+	z-index:2;		/*Setting z-index to 2, so that it will appear behind the buttons*/
+	}
+
+.galleryImg{			/*Styling the individual preview images of the gallery*/
+	height:100px;
+	width:100px;
+	opacity:0.6;		/*Sets default opacity to 0.6, so that it can be changed upon hover*/
+	}
+
+.galleryImg:hover{	
+	cursor:pointer;		/*The change in opacity and pointer apperance will alert the user that they can click the */
+	opacity:1;		/*preview images.*/
+	}
+
+#galImg{			/*Setting width of galImg*/
+	width:100%;
+}
+
+@media (max-width:940px){	/*When the creen is smaler than 940px (mobile devices) I remove the preview images. I do this because*/
+	#galImg{		/*I believe they would unnecessary clutter the screen*/
+		 display:none;
+	}
+}
+  
