@@ -1,32 +1,27 @@
-input, select, button
-{
-    background: #e2cfb6; 
-    border: #cdab7e;
-    border-radius: 5px;
-    size: 30px;
-    margin: 10px;
-    padding: 5px;
+form {
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+input {
+    border: 1px solid black;
+    background-color: : #e2cfb6;
+    width: 100%;
+
+}
+input[type=text], input[type=datetime-local], input[type=email], input[type=number], select {
+    width: 100%;
+    background-color: #e2cfb6;
+    border: 2px solid #555;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-#reservasjon input {
-	box-shadow: 3px 3px 1px #888888;
-	-webkit-box-shadow: inset 3px 3px 1px #888888;
-    width: 400px;
+input[type=submit] {
+  background-color: #826F55;
+  width: 250px;
+  font-weight: bold;
 }
-
-#reservasjon select {
-	-webkit-box-shadow: inset -3px -3px 1px #888888;
+input[type=submit]:hover {
+    background-color: #936a39;
 }
-
-#reservasjon #res_send {
-	background-color:#826F55;
-	box-shadow: 3px 3px 1px #888888;
-    width: 250px;
-    font-weight: bold;
-}
-
-#reservasjon select {
-	width: 150px;
-}
-
-
