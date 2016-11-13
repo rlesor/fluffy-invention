@@ -9,8 +9,7 @@
 body, html {
   height:  100%;
   margin:  0 auto;
-  background-color: #C2A57E;
-
+  background-color: #CFAA82;
 }
 
 /* Sets a size to all divs within sections ++  */
@@ -55,17 +54,22 @@ h1:after
     display:block;
     border:1px solid #262626;
 }
-#s_map {
-  background-color: #937c63;
-}
 
-#s_galleri {
-  background-color: #cd9575;
+#s_omoss {
+  background-color: #CFAA82;
+}
+#slideshow {
+  background-color: #CFAA82;
 }
 #s_meny {
-  background-color: #c2b280;
+  background-color: #9E8263;
 }
-#s_omoss, #slideshow {
-  background-color: #dbc6a2;
+#bordreservasjon {
+  background-color: #CFAA82;
 }
-
+#s_galleri {
+  background-color: #9E8263;
+}
+#s_map {
+  background-color: #CFAA82;
+}
