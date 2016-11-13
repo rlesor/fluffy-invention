@@ -13,14 +13,14 @@
   width: auto;
   height: 46px; /*sets the height to the height to one line of the nav_bar*/
 }
-@media screen and (max-width:767px){ /*changes the div element with the nav bar*/
+@media screen and (max-width:707px){ /*changes the div element with the nav bar*/
   #nav_bar_div {
-    height: 92px; /*sets the height to the height to two lines of the nav_bar*/
+    height: 96px; /*sets the height to the height to two lines of the nav_bar*/
   }
 }
-@media screen and (max-width:422px){ /*changes the div element with the nav bar*/
+@media screen and (max-width:395px){ /*changes the div element with the nav bar*/
   #nav_bar_div {
-    height: 138px; /*sets the height to the height to three lines of the nav_bar*/
+    height: 144px; /*sets the height to the height to three lines of the nav_bar*/
   }
 }
 
